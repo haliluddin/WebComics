@@ -1,0 +1,132 @@
+@media only screen and (max-width: 768px ) {
+  /* Header For Tablet */
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 0;
+  gap: 0;
+  padding: 0;
+}
+
+
+.nav{
+  display: flex;
+  width: 100%;
+  gap: 123px;
+  border-top: 1px solid rgb(207, 203, 203) ;
+  border-bottom: 1px solid rgb(207, 203, 203) ;
+}
+  .nav h4{
+    display: none;
+  }
+  .nav i{
+    display: inline;
+  }
+  .user-library-inbox {
+    display: flex;
+  padding: 5px 0px;
+ 
+  }
+  .user-library-inbox .tablet-logo{
+    display: block;
+    margin-right: 150px;
+  }
+  .profile-search .publish{
+    display: none;
+  }
+  /* Header For Tablet */
+
+  /* Banner */
+  .banner{
+    display: none;
+  }
+ /* Banner */
+
+ /* Originals */
+ .originals{
+  width: 100%;
+  height: 400px;
+ }
+.originals .dates{
+  display: none;
+}
+.originals .comic-list{
+  width: 100%;
+  display: flex;
+  gap: 3px;
+  margin: 0;
+}
+.comic-list li{
+  width: 180px;
+}
+.comic-list li h5{
+  font-size: 13px;
+}
+.comic-list li h4{
+  font-size: 15px;
+}
+.comic-list li .heart i{
+  font-size: 12px;
+}
+.tablet-original{
+  display: block;
+}
+/* Originals */
+
+/* Genres */
+.genre-container{
+  width: 100%;
+}
+.genre-container .heading{
+  background-color: white;
+  width: 100%;
+}
+.heading a{
+  font-size: 19px ;
+}
+.genres{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.genres li{
+  padding: 30px 40px;
+}
+.genres li:hover{
+  padding: 30px 40px;
+  cursor: pointer;
+}
+/* Genres */
+
+/* popular */
+.popular-container{
+  width: 100%;
+  gap:0;
+  
+}
+.popular-container .popular-list{
+  width: 100%;
+}
+/* popular */
+
+/* Canvas */
+.canvas-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.canvas-container .canvas{
+  display: none;
+}
+.canvas-container .tablet-canvas{
+  display: block;
+}
+.canvas-list {
+  width: 100%;
+}
+.canvas-list li{
+  width: 150px;
+}
+/* Canvas */
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../genres/genres.css">  <link rel="stylesheet" href="../genres/genre(media).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header> 
+        <nav> 
+            <img src="../../Images/logo.png" class="logoh">
+            <ul class="nav">
+                <li><a href="../index(user).html"> <h4>HOME</h4> <i class="fa-solid fa-house"></i>  </a></li>
+                <li><a href="../originals/originals.html"> <h4>ORIGINALS</h4> <i class="fa-solid fa-pen-nib"></i> </a></li>
+                <li><a href="#" id="clicked"> <h4>GENRES</h4> <i class="fa-solid fa-palette"></i> </a></li>
+                <li><a href="../popular/popular.html"> <h4>POPULAR</h4> <i class="fa-solid fa-fire-flame-curved"></i></a></li>
+                <li><a href="../canvas/canvas.html"> <h4>CANVAS</h4> <i class="fa-solid fa-brush"></i> </a></li>
+            </ul> 
+        </nav>
+           
+        <div class="user-library-inbox">
+            <img src="../../Images/logo.png" class="tablet-logo">
+           
+            <div class="profile-search">
+                <a href="../publish/publish.html"><button class="publish"> PUBLISH</button></a>
+                <a href="../library/viewed.html"><i class="fa-solid fa-book-open-reader" ></i></a>
+                <button id="theme-toggle" class="mode"> <i class="fa-solid fa-moon" ></i></button>
+                <div class="drop-down">
+                    <button><img src="../../Images/canvas/series3.jpg" class="user"></button>
+                    <div class="dropdown-content">
+                        
+                        <a href="../others/account.html"> <i class="fa-solid fa-user"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account</a>
+                        <a href="#" id="myBtn"><i class="fa-solid fa-shop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coin Shop</a>
+                        
+                        <a href="../../footer/help.html"><i class="fa-solid fa-question"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help </i></a>
+                        <a href="../../index.html"><i class="fa-solid fa-right-from-bracket" style="color:#02767c; font-weight: bold;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#02767c; font-weight: bold;"> Log out</span></a>
+                      </div>
+                </div>
+                 
+                <form action="#" class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <ul class="sub-nav">
+                
+                <li class="genre" ><a href="../genres/action.html"> ACTION </a></li>
+                <li class="genre"><a href="../genres/romance.html"> ROMANCE </a></li>
+                <li class="genre"><a href="../genres/comedy.html"> COMEDY </a></li>
+                <li class="click"><a href="../genres/fanstasy.html"> FANTASY </a></li>
+                <li class="genre"><a href="../genres/drama.html"> DRAMA </a></li>
+                <li class="genre"><a href="../genres/sci-fi.html"> SCI-FI </a></li>
+                <li class="genre"><a href="../genres/horror.html" class="hide"> HORROR </a></li>
+                <li class="genre"><a href="../genres/sports.html" class="hide"> SPORTS </a></li>
+                <li class="genre"><a href="../genres/thriller.html" class="hide"> THRILLER </a></li>
+                <li class="genre"><a href="../genres/crime.html" class="hide"> CRIME/MYSTERY </a></li>
+                <div class="dropdown">
+                    <div class="dropBtn" onclick="dropdown()">
+                      OTHERS <i class="fa-solid fa-chevron-down"></i></div>
+                  
+                   <div  id="dropdown-content" class="drop">
+                    <div class="other-content">
+                      <a href="../genres/historical.html">Historical</a>
+                      <a href="./school.html">School</a>
+                      <a href="./supernatural.html">Supernatural</a>
+                      <a href="../genres/horror.html" class="show"> HORROR </a>
+                        <a href="../genres/sports.html" class="show"> SPORTS </a>
+                        <a href="../genres/sports.html" class="show"> SPORTS </a>
+                        <a href="../genres/thriller.html" class="show"> THRILLER </a>
+                        <a href="../genres/crime.html" class="show"> CRIME/MYSTERY </a>
+                      <a href="../genres/historical.html" class="show">Historical</a>
+                      <a href="./school.html" class="show">School</a>
+                      <a href="./supernatural.html" class="show">Supernatural</a>
+                    </div>
+                   </div>
+                  </div>
+            </ul>
+        </nav>
+         
+        <div class="comics-container">
+            <div class="category">
+                <div class="action-sort">
+                    <h2> Fantasy </h2>
+                    <div class="menu">
+                        <select>
+                          <option value="option1">by Popularity</option>
+                          <option value="option2">by Date</option>
+                          <option value="option3">by Likes</option>
+                          
+                        </select> <i class="fa-solid fa-check"></i>
+                      </div>
+                </div>
+                
+
+                <ul class="comic-list">
+                
+                    <a href="../comic(user)/free/DontHate.html"> <li>
+                        <img src="../../Images/DontHate(cover).png" alt="Comic 1">
+                         <h3> DON'T HATE  </h3>
+                         Pink_Alien
+                          <div class="heart"> <i class="fa-solid fa-heart"> 1,642</i></div>
+                   </li> </a>
+       
+                   <a href="../comic(user)/ads-coins/SuitorArmor.html"> <li>
+                       <img src="../../Images/SuitorArmor(cover).jpg" alt="Comic 1">
+                        <h3> Suitor Armor </h3>
+                        Purpah
+                         <div class="heart"> <i class="fa-solid fa-heart"> 1,642</i></div>
+                  </li> </a>
+            
+                    <a href="../comic(user)/complete/Darbi.html"> <li>
+                        <img src="../../Images/Darbi(cover).jpg" alt="Comic 1">
+                         <h3> Darbi </h3>
+                         Sherard Jackson
+                          <div class="heart"> <i class="fa-solid fa-heart"> 1,642</i></div>
+                   </li> </a>
+            
+                   <a href="../comic(user)/ads/CastleSwimmer.html"> <li>
+                            <img src="../../Images/Castle Swimmer.jpg" alt="Comic 1">
+                              <h3> Angel in the Forest </h3>
+                              Yinller
+                               <div class="heart"> <i class="fa-solid fa-heart"> 1,642</i></div>
+                    </li> </a>
+            
+                    <a href="../comic(user)/ads-coins/covenant.html"> <li>
+                          <img src="../../Images/Covenant(cover).jpg" alt="Comic 1">
+                             <h3> Covenant </h3>
+                             explodikid
+                              <div class="heart"> <i class="fa-solid fa-heart"> 1,642</i></div>
+                    </li> </a>
+
+                    <a href="../comic(user)/free/HoovesofDeath.html"> <li>
+                        <img src="../../Images/HoovesofDeath(cover).png" alt="Comic 1">
+                           <h3> Hooves of Death </h3>
+                           Sam Bragg
+                            <div class="heart"> <i class="fa-solid fa-heart"> 1,642</i></div>
+                  </li> </a>
+    
+                </ul>
+        
+            </div> 
+        </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="dragon">
+                    <div style="display: flex; gap: 30px;">
+                        <span class="close">&times;</span>
+                        <h2>Coin Shop</h2>
+                    </div>
+                    <div class="save">
+                        <i class="fa-solid fa-coins"></i>
+                        <p>13</p>
+                    </div>
+                </div>
+                <h3>Unlock episodes and support creators!</h3>
+                <div class="coins">
+                    <div>
+                        <img src="../others/6.png">
+                        <h2>10</h2>
+                        <p>US$ 0.99</p>
+                    </div>
+                    <div>
+                        <img src="../others/6.png">
+                        <h2>50 <span>+ 2</span></h2>
+                        <p>US$ 4.99</p>
+                    </div>
+                    <div>
+                        <img src="../others/3.png">
+                        <h2>100 <span>+ 8</span></h2>
+                        <p>US$ 9.99</p>
+                    </div>
+                    <div>
+                        <img src="../others/4.png">
+                        <h2>300 <span>+ 30</span></h2>
+                        <p>US$ 29.99</p>
+                    </div>
+                    <div>
+                        <img src="../others/2.png">
+                        <h2>500 <span>+ 60</span></h2>
+                        <p>US$ 49.99</p>
+                    </div>
+                    <div>
+                        <img src="../others/5.png">
+                        <h2>1000 <span>+ 150</span></h2>
+                        <p>US$ 99.99</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>       
+    </main>
+
+    <footer>
+        <img src="../../Images/logo.png" height="80px" class="logo"><br><br>
+        <div class="media">
+            <i class="fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div><br><br>
+        <div class="f_others">
+         
+            <a href="../../footer/feedback.html"> <div>Feedback</div></a>
+            <a href="../../footer/help.html"> <div>Help</div></a>
+            <a href="../../footer/terms.html"> <div>Terms</div></a>
+            <a href="../../footer/privacy.html"><div>Privacy</div></a>
+            <a href="../../footer/contact.html"> <div>Contact</div></a>
+        </div><br><br>
+        <div class="credits"><i class="fa-regular fa-copyright"></i> 2024 WEBCOMIC Entertainment</div>
+    </footer>
+    </main>
+
+    <script src="genres.js"></script>
+</body>
+</html>

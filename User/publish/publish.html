@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../others/style.css">
+</head>
+<body>
+    <header> 
+        <img src="../Images/logo.png" class="logoh">
+        <nav> 
+            <ul class="nav">
+                <li ><a href="../index(user).html" > HOME </a></li>
+                <li><a href="../originals/originals.html"> ORIGINALS </a></li>
+                <li><a href="../genres/action.html"> GENRES </a></li>
+                <li><a href="../popular/popular.html" > POPULAR</a></li>
+                <li><a href="../canvas/canvas.html"> CANVAS </a></li>
+            </ul> 
+        </nav>
+           
+        <div class="user-library-inbox">
+            <a href="../publish/dashboard.html"><button class="publish"> PUBLISH</button></a>
+            <a href="../library/viewed.html"><i class="fa-solid fa-book-open-reader" ></i></a>
+            
+
+            <div class="drop-down">
+                <button><img src="../Images/canvas/series3.jpg" class="user"></button>
+                <div class="dropdowncontent">
+                    
+                    <a href="../others/account.html"> <i class="fa-solid fa-user"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account</a>
+                    <a href="#" id="naila"><i class="fa-solid fa-shop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coin Shop</a>
+                    <a href="../footer/help.html"><i class="fa-solid fa-question"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help </i></a>
+                    <a href="../../index.html"><i class="fa-solid fa-right-from-bracket" style="color:#02767c; font-weight: bold;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#02767c; font-weight: bold;"> Log out</span></a>
+                  </div>
+            </div>
+            
+           </div>
+
+           <form action="#" class="search-bar">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+        </form>
+    </header>
+    <div id="athena" class="modal">
+        <div class="modal-content">
+            <div class="dragon">
+                <div style="display: flex; gap: 30px;">
+                    <span class="se">&times;</span>
+                    <h2>Coin Shop</h2>
+                </div>
+                <div class="saved">
+                    <i class="fa-solid fa-coins"></i>
+                    <p>13</p>
+                </div>
+            </div>
+            <h3>Unlock episodes and support creators!</h3>
+            <div class="coins">
+                <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                    <img src="../others/6.png">
+                    <h2>10</h2>
+                    <p>US$ 0.99</p>
+                </a>
+                <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                    <img src="../others/6.png">
+                    <h2>50 <span>+ 2</span></h2>
+                    <p>US$ 4.99</p>
+                </a>
+                <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                    <img src="../others/3.png">
+                    <h2>100 <span>+ 8</span></h2>
+                    <p>US$ 9.99</p>
+                </a>
+                <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                    <img src="../others/4.png">
+                    <h2>300 <span>+ 30</span></h2>
+                    <p>US$ 29.99</p>
+                </a>
+                <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                    <img src="../others/2.png">
+                    <h2>500 <span>+ 60</span></h2>
+                    <p>US$ 49.99</p>
+                </a>
+                <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                    <img src="../others/5.png">
+                    <h2>1000 <span>+ 150</span></h2>
+                    <p>US$ 99.99</p>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("athena");
+        var btn = document.getElementById("naila");
+        var span = document.getElementsByClassName("se")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    <main>
+        <nav>
+            <ul class="sub-nav">
+                <li class="cli"><span>1</span> SERIES </li>
+                <li class="not"><span>2</span> EPISODES </li>
+            </ul>
+            <ul class="sub">
+                <p class="help">HELP</p>
+                <li>You can create a series in just few minutes! But, let's give you some tips before you start.</li>
+                <li><a href="../footer/community.html">Community Policy <i class="fa-solid fa-arrow-right ar"></i></a></li>
+                <li><a href="../footer/help.html">Uploading Instructions <i class="fa-solid fa-arrow-right ar"></i></a></li>
+            </ul>
+        </nav>
+        <form class="container" action="episodes.html">
+            <div class="left">
+                <h3>Square Thumbnail</h3>
+                <label for="input-square">
+                <div id="square">
+                    <i class="fa-solid fa-upload upload"></i><br><br>
+                    <p class="below">Select an image to upload. Or drag the image file here.</p>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-square" style="opacity: 0;" onchange="handleFileUpload('square',1080,1080)" required />
+                </div>
+                </label><br>
+                <p class="ins">Image size must be 1080x1080. Image must be less than 500KB. Only JPG, JPEG, and PNG formats are allowed.</p><br><br>
+                
+                <h3>Vertical Thumbnail</h3>
+                <label for="input-vertical">
+                <div id="vertical">
+                    <i class="fa-solid fa-upload upload"></i><br><br>
+                    <p class="below">Select an image to upload. Or drag the image file here.</p>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-vertical" style="opacity: 0;" onchange="handleFileUpload('vertical',1080,1920)" required>
+                </div>
+                </label><br>
+                <p class="ins">Image size must be 1080x1920. Image must be less than 700KB. Only JPG, JPEG, and PNG formats are allowed.</p>
+            </div>
+            <div class="right">
+                <div class="opt">
+                    <h3>Series Banner</h3>
+                    <p style="font-size: small;">(optional)</p>
+                </div>
+
+                <label for="input-banner">
+                <div id="banner">
+                    <i class="fa-solid fa-upload upload"></i><br><br>
+                    <p class="below">Select an image to upload. Or drag the image file here.</p>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-banner" style="opacity: 0;" onchange="handleFileUpload('banner',3840,1080)">
+                </div>
+                </label><br>
+                
+                <p class="ins">Image size must be 3840x1080. Image must be less than 900KB. Only JPG, JPEG, and PNG formats are allowed.</p><br><br>
+    
+                <div class="gen">
+                    <div>
+                        <h3>Genre 1</h3>
+                        <select required>
+                            <option value="">Select</option>
+                            <option>COMEDY</option>
+                            <option>FANTASY</option>
+                            <option>ROMANCE</option>
+                            <option>SCI-FI</option>
+                            <option>DRAMA</option>
+                            <option>ACTION</option>
+                            <option>THRILLER</option>
+                            <option>HORROR</option>
+                            <option>SCHOOL</option>
+                            <option>SUPERNATURAL</option>
+                            <option>CRIME/MYSTERY</option>
+                            <option>HISTORICAL</option>
+                            <option>SPORTS</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="opt">
+                            <h3>Genre 2</h3>
+                            <p style="font-size: small;">(optional)</p>
+                        </div>
+                        <select>
+                            <option>Select</option>
+                            <option>COMEDY</option>
+                            <option>FANTASY</option>
+                            <option>ROMANCE</option>
+                            <option>SCI-FI</option>
+                            <option>DRAMA</option>
+                            <option>ACTION</option>
+                            <option>THRILLER</option>
+                            <option>HORROR</option>
+                            <option>SCHOOL</option>
+                            <option>SUPERNATURAL</option>
+                            <option>CRIME/MYSTERY</option>
+                            <option>HISTORICAL</option>
+                            <option>SPORTS</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br>
+                <h3>Series Title</h3>
+                <input type="text" maxlength="50" placeholder="Less than 50 characters" id="text" required>
+                <br><br>
+                <h3>Summary</h3>
+                <textarea rows="13" cols="115" placeholder="Less than 500 characters" id="area" required></textarea>
+                <br><br>
+                <p class="rem">KEEP IN MIND</p>
+                <p>We do not allow content that contains nudity or is intended to be sexually gratifying. This includes, but is not limited to, full and partial nudity, as well as graphic depictions of sexual acts. We do not allow excessive violence or graphic content intended to shock and offend readers. This includes brutal and extended/prolonged scenes of violence and gore. More details can be found <a class="sake" href="../footer/community.html">HERE</a></p>
+                <br>
+                <p><input type="checkbox" id="cb" required>I agree to WEBCOMIC's <a href="../footer/community.html" class="sake">Community Policy</a> and <a href="../footer/privacy.html" class="sake">Privacy Policy.</a></p>
+                <br>
+                <p><input type="checkbox" id="cb">Please check here if this series contains mature themes and situations.</p>
+                <input type="submit" id="create" value="Create Series">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img src="../Images/logo.png" height="80px" class="logo"><br><br>
+        <div class="media">
+            <i class="fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div><br><br>
+        <div class="f_others">
+            <a href="../footer/feedback.html">Feedback</a>
+            <a href="../footer/help.html">Help</a>
+            <a href="../footer/terms.html">Terms</a>
+            <a href="../footer/privacy.html">Privacy</a>
+            <a href="../footer/contact.html">Contact</a>
+        </div><br><br>
+        <div class="credits"><i class="fa-regular fa-copyright"></i> 2024 WEBCOMIC Entertainment</div>
+    </footer>
+
+    <script>
+        function handleFileUpload(elementId, width, height) {
+            let input = document.getElementById(`input-${elementId}`);
+            let file = input.files[0];
+            let img = new Image();
+            img.onload = function() {
+                if (img.width === width && img.height === height) {
+                    document.getElementById(elementId).style.backgroundImage = `url(${URL.createObjectURL(file)})`;
+                    document.getElementById(elementId).innerText = '';
+                } else {
+                    alert(`The ${elementId} thumbnail must be larger than ${width}x${height}px. Please upload an image with correct dimensions.`);
+                    input.value = ''; // Clear the file input
+                }
+            };
+            img.src = URL.createObjectURL(file);
+        }
+    </script>
+    <script src="../Darkmode.js"></script>
+</body>
+</html>

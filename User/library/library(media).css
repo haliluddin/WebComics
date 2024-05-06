@@ -1,0 +1,501 @@
+@media only screen and (max-width: 768px ) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+/* Header For Tablet */
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 0;
+  gap: 0;
+  padding: 0;
+}
+.logoh{
+  display: none;
+}
+
+.nav{
+  display: flex;
+  width: 100%;
+  gap: 123px;
+  border-top: 1px solid rgb(207, 203, 203) ;
+  border-bottom: 1px solid rgb(207, 203, 203) ;
+}
+  .nav h4{
+    display: none;
+  }
+  .nav i{
+    display: inline;
+  }
+  .user-library-inbox {
+    display: flex;
+  padding: 5px 0px;
+ 
+  }
+  .user-library-inbox .tablet-logo{
+    display: block;
+    margin-right: 150px;
+  }
+  .profile-search .publish{
+    display: none;
+  }
+  /* Header For Tablet */
+    
+main nav{
+    position: sticky;
+      z-index: 0;
+      top:0;
+}
+    .sub-nav{
+      background-color: #fff;
+      display: flex;
+      gap: 50px;
+      width:100%;
+      justify-content: center;
+      padding:18px;
+      text-decoration: none;
+      font-family: sans-serif;
+      border-top: 1px solid rgb(172, 172, 172);
+      border-bottom: 1px solid  rgb(172, 172, 172);
+    }
+   
+    .sub-nav li{
+        list-style-type: none;
+        font-weight: bold;
+    }
+    .sub-nav a{
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+    .sub-nav h3{
+        display: none;
+     margin-left: 30px;
+     margin-right: 150px;
+     text-align: center;
+     padding: none;
+     font-family: sans-serif;
+    }
+    
+    
+    
+    .sort{
+        width: 80px;
+        appearance: none;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    
+    .drop{
+        font-size: 19px;
+        font-family: sans-serif;
+    }
+    
+    input[type="checkbox"] {
+      display: none;
+      }
+    
+      #show:checked ~ .select-delete{
+          display: block; 
+      }
+      .editbtn{
+        display: flex;
+        justify-content: right;
+        gap: 30px;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+      .editbtn .edit{
+        padding:10px 15px 10px 15px;
+        border-radius: 50px;
+        background-color: #02767c;
+        color: white;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        transition: opacity .15s;
+      }
+      .select-delete{
+        display: none;
+        font-family: sans-serif;
+        font-size: small;
+        
+      }
+      .select-delete input[type="checkbox"]{
+        display: inline;
+        
+      }
+    .select-delete button{
+       border:none;
+        margin-left:20px;
+        padding:10px 15px 10px 15px;
+        border-radius: 50px;
+        background-color: #02767c;
+        color: white;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        transition: opacity .15s;
+    }
+    .editbtn .edit:hover{
+      cursor: pointer;
+      opacity: 70%;
+    }
+    .select-delete button:hover{
+      cursor: pointer;
+      opacity: 70%;
+    }
+    
+    .rank{
+      display: flex;
+      gap: 15px;
+      padding: 5px;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+    .rank a{
+      text-decoration: none;
+      width: 100%;
+    }
+    .rank p{
+      font-size: 12px;
+      text-align: center;
+    }
+    .rank .details{
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .rank .details p{
+      font-size: 16px;
+      text-align: left;
+      font-weight: bold;
+      color: #02767c;
+      margin-top: 10px;
+    }
+    .rank .details h1{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: left;
+    }
+    .rank li{
+      border-radius: 2px;
+     
+      display: flex;
+      flex-direction: row ;
+      background-color: white;
+      border: rgb(207, 203, 203) 1px solid;
+      gap:30px;
+    }
+    .rank img{
+      height: 190px;
+      width:190px;
+      padding:16px;
+    }
+    .details h5{
+      color: black;
+    
+    }
+    .rank li:hover{
+      cursor: pointer;
+    }
+    
+    .recent{
+      background: transparent;
+      font-size: 19px;
+      margin-top: 1px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+    .comic-list {
+      list-style: none;
+      display: flex ;
+      gap: 8px;
+      flex-wrap: wrap;
+     padding: 10px;
+    }
+    
+    .comic-list li {
+      padding: 5px;
+      width: 230px;
+      font-size:14px;
+     background-color: white;
+     text-align: center;
+    }
+    .comic-list .heart i{
+      color: #00ADB5;
+      font-size: 12px;
+      padding-top:10px;
+    }
+    .comic-list a{
+      text-decoration: none;
+      color:black;
+    }
+    .comic-list h3{
+      font-size: 16px;
+    }
+    .comic-list img {
+      width: 100%;
+      height: 100%;
+      padding: 2px;
+    }
+    
+    .comic-list i{
+      color: #00ADB5;
+      font-size: small;
+    }
+    
+
+    
+    
+    .subscribed-list {
+      list-style: none;
+      display: flex ;
+      gap: 10px;
+      justify-content: center;
+     flex-direction: column;
+    
+    }
+    
+    .subscribed-list li {
+      
+      font-size:14px;
+       background-color: white;
+       display: flex;
+       gap:60px;
+       width:100%;
+       border: rgb(207, 203, 203) 1px solid;
+       border-radius: 1px;
+    }
+    .subscribed-list .heart i{
+      color: #00ADB5;
+      font-size: 12px;
+      padding-top:10px;
+    }
+    .subscribed-list a{
+      text-decoration: none;
+      color:black;
+    }
+    .subscribed-list h3{
+      font-size: 25px;
+    }
+    .subscribed-list p{
+      color: #02767c;
+      font-weight: bold;
+    }
+    .subscribed-list img {
+      width: 25%;
+      height: 200px;
+      padding: 2px;
+    }
+    .subscribed-list .update{
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    
+    .subscribed-list i{
+      color: #00ADB5;
+      font-size: small;
+    }
+    
+    
+    
+    
+    
+    .comment-container{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        padding: 29px 30px 30px 30px;
+        border-radius: 10px;
+        background-color: white;
+       
+    }
+    .comments{
+      width: 90%;
+    }
+    .comments .heading{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .heading h3{
+      font-size: 18px;
+    }
+    .heading button{
+      border: none;
+      color:rgb(87, 81, 81);
+      background-color: rgb(207, 207, 207);
+      padding: 6px 15px 6px 15px;
+      font-size: 14px;
+    }
+    .comments button:hover{
+      cursor: pointer;
+    }
+    .comments .comment{
+      border-bottom: rgb(194, 194, 194) 1px solid;
+      padding-bottom:10px;
+      padding-top: 15px;
+    }
+    .comment .content{
+      padding:10px;
+      width:90px;
+      color: rgb(87, 81, 81);
+    }
+    .comment .thumbs{
+      padding:10px;
+      display: flex;
+      justify-content: flex-end;
+      gap:20px;
+     
+    }
+    .mins-thumbs{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      color: rgb(124, 123, 123);
+    }
+    .thumbs button{
+      border: none;
+      outline: none;
+      background: transparent;
+      color: rgb(124, 123, 123);
+      font-family: sans-serif;
+    }
+    .thumbs i{
+      font-size: 12px;
+    }
+    .mins-thumbs .mins{
+      font-size: 13px;
+    
+    }
+    
+    
+    .following-container{
+      display: flex;
+      gap:20px;
+      font-family: sans-serif;
+      padding: 10px;
+    }
+    .following{
+       padding:20px;
+      background-color: white;
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      width: 220px;
+      height:210px;
+    }
+    .following .detail{
+      display: flex;
+      flex-direction: column;
+      gap:10px
+    }
+    .following a{
+      text-decoration: none;
+      color:black;
+    }
+    .detail img{
+      padding-top:10px;
+      width: 48%;
+      height:55%;
+      border-radius: 50%;
+    margin: auto;
+    }
+    .detail h3{
+      padding-top:10px;
+      font-size: medium;
+    }
+    .detail .series-followers{
+      display: flex;
+      justify-content: center;
+      gap:15px;
+    }
+    .series-followers h5{
+      margin-top:5px;
+      font-size: 12px;
+     
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    footer{
+        background-color: #EEEEEE;
+        padding: 50px;
+      }
+      .media{
+        display: flex;
+        font-size: large;
+        justify-content: center;
+        gap: 30px;
+      }
+      .f_others{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+      }
+      .credits{
+        font-size: small;
+        text-align: center;
+      }
+      .number{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 50px;
+     
+      }
+      .num{
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+      }
+      .num1{
+        text-decoration: none;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        background-color: #00ADB5;
+        text-align: center;
+        font-size: medium;
+        position: relative;
+      }
+      .click a{
+        font-size: small;
+        text-decoration: none;
+        margin: 18px;
+        color: #00ADB5;
+        font-weight: bold;
+      }
+    
+
+}

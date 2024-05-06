@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../others/style.css">
+    </head>
+    <body>
+        <header> 
+            <img src="../Images/logo.png" class="logoh">
+            <nav> 
+                <ul class="nav">
+                    <li ><a href="../index(user).html" > HOME </a></li>
+                    <li><a href="../originals/originals.html"> ORIGINALS </a></li>
+                    <li><a href="../genres/action.html"> GENRES </a></li>
+                    <li><a href="../popular/popular.html" > POPULAR</a></li>
+                    <li><a href="../canvas/canvas.html"> CANVAS </a></li>
+                </ul> 
+            </nav>
+               
+            <div class="user-library-inbox">
+                <a href="../publish/dashboard.html"><button class="publish"> PUBLISH</button></a>
+                <a href="../library/viewed.html"><i class="fa-solid fa-book-open-reader" ></i></a>
+                
+    
+                <div class="drop-down">
+                    <button><img src="../Images/canvas/series3.jpg" class="user"></button>
+                    <div class="dropdowncontent">
+                        
+                        <a href="../others/account.html"> <i class="fa-solid fa-user"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account</a>
+                        <a href="#" id="naila"><i class="fa-solid fa-shop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coin Shop</a>
+                        <a href="../footer/help.html"><i class="fa-solid fa-question"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help </i></a>
+                        <a href="../../index.html"><i class="fa-solid fa-right-from-bracket" style="color:#02767c; font-weight: bold;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#02767c; font-weight: bold;"> Log out</span></a>
+                      </div>
+                </div>
+                
+               </div>
+    
+               <form action="#" class="search-bar">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+            </form>
+        </header>
+        <div id="athena" class="modal">
+            <div class="modal-content">
+                <div class="dragon">
+                    <div style="display: flex; gap: 30px;">
+                        <span class="se">&times;</span>
+                        <h2>Coin Shop</h2>
+                    </div>
+                    <div class="saved">
+                        <i class="fa-solid fa-coins"></i>
+                        <p>13</p>
+                    </div>
+                </div>
+                <h3>Unlock episodes and support creators!</h3>
+                <div class="coins">
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/6.png">
+                        <h2>10</h2>
+                        <p>US$ 0.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/6.png">
+                        <h2>50 <span>+ 2</span></h2>
+                        <p>US$ 4.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/3.png">
+                        <h2>100 <span>+ 8</span></h2>
+                        <p>US$ 9.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/4.png">
+                        <h2>300 <span>+ 30</span></h2>
+                        <p>US$ 29.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/2.png">
+                        <h2>500 <span>+ 60</span></h2>
+                        <p>US$ 49.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/5.png">
+                        <h2>1000 <span>+ 150</span></h2>
+                        <p>US$ 99.99</p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    
+        <script>
+            var modal = document.getElementById("athena");
+            var btn = document.getElementById("naila");
+            var span = document.getElementsByClassName("se")[0];
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    <main>
+        <nav>
+            <ul class="sub-nav">
+                <li class="not"><span>1</span> SERIES </li>
+                <li class="cli"><span>2</span> EPISODES </li>
+            </ul>
+            <ul class="sub">
+                <p class="help">HELP</p>
+                <li>You can create a series in just few minutes! But, let's give you some tips before you start.</li>
+                <li><a href="../footer/community.html">Community Policy <i class="fa-solid fa-arrow-right ar"></i></a></li>
+                <li><a href="../footer/help.html">Uploading Instructions <i class="fa-solid fa-arrow-right ar"></i></a></li>
+            </ul>
+        </nav>
+        <form class="container" onsubmit="event.preventDefault(); document.getElementById('id01').style.display = 'block';">
+            <div class="left">
+                <h3>Thumbnail</h3>
+                <label for="input-thumbnail">
+                <div id="thumbnail" style="padding: 0;">
+                    <img src="Images/series2.jpg" height="150px" width="160px">
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-thumbnail" style="opacity: 0;" onchange="handleFileUpload('thumbnail')">
+                </div>
+                </label><br>
+                <p class="ins">Recommended size is 160x151. Image must be less than 500kb. Only JPG, JPEG, and PNG formats are allowed. File name can only be in English letters and numbers.</p><br><br>
+            </div>
+            <div class="right">
+                <div style="border-bottom: 1px rgb(207, 203, 203) solid; padding-bottom: 30px;">
+                    <h3>Series Title : Web Development</h3>
+                    <h3>Episode Title</h3>
+                    <div style="display: flex;"><div class="chapter">1</div><input type="text" maxlength="60" placeholder="Less than 60 characters" id="txt" value="HTML"></div>
+                    <br><br>
+                    <h3>Upload File</h3>
+                    <div style="display: flex;">
+                        <div>
+                            <label for="files" class="ele">Select file to upload</label>
+                            <p><input type="file" accept="image/jpeg, image/png, image/jpg" id="files" multiple="multiple"></p>
+                        </div>
+                        <label><a href="#" id="deleteAllBtn" class="ele">Delete All</a></label>
+                    </div>
+                    <div id="result"><img src="Images/series2.jpg" class="low"></div><br>
+                    <p class="ins">The image must be less than 800px wide and 1280px long. You can upload up to 20MB in total. Each file can be up to 2MB. Only JPG, JPEG, and PNG formats are allowed.</p>
+                    <br><br>
+                    <div class="opt">
+                        <h3>Creator's Note</h3>
+                        <p style="font-size: small;">(optional)</p>
+                    </div>
+                    <textarea rows="5" cols="115" placeholder="Less than 500 characters" id="area"></textarea>
+                    <br><br><br>
+                    <h3>Preview</h3>
+                    <a href="#" class="j"><label class="ele">PC</label></a>
+                    <a href="#" class="j"><label class="ele">Mobile</label></a>
+                    <div style="display: flex; gap: 40px; margin-top: 40px;">
+                        <p style="font-weight: bold;">Comments</p>
+                        <div>
+                            <input type="radio" id="enable" name="group1" checked>
+                            <label for="enable">Enable</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="disable" name="group1">
+                            <label for="disable">Disable</label>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" id="create" value="Save Changes">
+            </div>
+        </form>
+        <div id="id01" class="modal2x">
+            <form class="modal-content2x" action="editeps2.html">
+                <div class="bx">
+                    <p style="line-height: 1.5;">This episode will be reviewed. Once approved, it'll become visible to the other users.</p>
+                    <button type="submit" onclick="document.getElementById('id01').style.display='none'" class="ele" style="background-color: #00ADB5;">Okay</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="ele">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <img src="../Images/logo.png" height="80px" class="logo"><br><br>
+        <div class="media">
+            <i class="fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div><br><br>
+        <div class="f_others">
+            <a href="../footer/feedback.html">Feedback</a>
+            <a href="../footer/help.html">Help</a>
+            <a href="../footer/terms.html">Terms</a>
+            <a href="../footer/privacy.html">Privacy</a>
+            <a href="../footer/contact.html">Contact</a>
+        </div><br><br>
+        <div class="credits"><i class="fa-regular fa-copyright"></i> 2024 WEBCOMIC Entertainment</div>
+    </footer>
+    <script>
+        function handleFileUpload(elementId) {
+            let input = document.getElementById(`input-${elementId}`);
+            let file = input.files[0];
+            if (file) {
+                document.getElementById(elementId).style.backgroundImage = `url(${URL.createObjectURL(file)})`;
+                document.getElementById(elementId).innerText = '';
+            }
+        }
+
+
+        document.querySelector("#files").addEventListener("change", (e) => {
+            if (window.File && window.FileReader && window.FileList && window.Blob) {
+                const files = e.target.files;
+                const output = document.querySelector("#result");
+
+                for (let i = 0; i < files.length; i++) {
+                    if (!files[i].type.match("image")) continue;
+                    const picReader = new FileReader();
+                    picReader.addEventListener("load", function (event) {
+                        const picFile = event.target;
+                        const div = document.createElement("div");
+                        div.classList.add("image-container"); // Add a class to the div for styling
+                        div.innerHTML = `
+                            <img class="thumb" src="${picFile.result}" title="${picFile.name}"/>
+                            <br>
+                            <i class="fa-regular fa-circle-xmark delete-btn" data-index="${i}"></i>
+                        `;
+                        output.appendChild(div);
+
+                        const deleteBtn = div.querySelector(".delete-btn");
+                        deleteBtn.addEventListener("click", function () {
+                            div.remove(); // Remove the image container when delete button is clicked
+                        });
+                    });
+                    picReader.readAsDataURL(files[i]);
+                }
+            } else {
+                alert("Your browser does not support the File API");
+            }
+        });
+
+        document.querySelector("#deleteAllBtn").addEventListener("click", (e) => {
+            e.preventDefault(); // Prevent the default behavior of the link
+            const imageContainers = document.querySelectorAll(".image-container");
+            imageContainers.forEach((container) => {
+                container.remove(); // Remove each image container
+            });
+        });
+           
+    </script>
+    <script src="../Darkmode.js"></script>
+</body>
+</html>

@@ -1,0 +1,625 @@
+@media only screen and (max-width: 768px ) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+/* Header For Tablet */
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+    gap: 0;
+    padding: 0;
+  }
+  .logoh{
+    display: none;
+  }
+  
+  .nav{
+    display: flex;
+    width: 100%;
+    gap: 123px;
+    border-top: 1px solid rgb(207, 203, 203) ;
+    border-bottom: 1px solid rgb(207, 203, 203) ;
+  }
+    .nav h4{
+      display: none;
+    }
+    .nav i{
+      display: inline;
+    }
+    .user-library-inbox {
+      display: flex;
+    padding: 5px 0px;
+   
+    }
+    .user-library-inbox .tablet-logo{
+      display: block;
+      margin-right: 150px;
+    }
+    .profile-search .publish{
+      display: none;
+    }
+    /* Header For Tablet */
+      
+    
+    body{
+        background-color:#FAF9F6;
+        font-family: sans-serif;
+    }
+   
+    .banner img{
+        width: 100%;
+        height:455px;
+      opacity: 75%;
+    }
+    .banner{
+        position: relative;
+        background-color: black;
+        height:455px;
+      
+    }
+    .banner .content{
+        display: flex;
+        flex-direction: column;
+        gap:70px;
+        position: absolute;
+        top:15%;
+        left:10%;
+        right: 10%;
+    }
+    .content .info{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 250px;
+    }
+    .info .title-author{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .title-author a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .title-author h4{
+        color: #00ADB5;
+    }
+    .info .rate{
+        display: flex;
+        gap:20px;
+    }
+    .rate i{
+        font-size: 13px;
+        color: white;
+    }
+    .info .desc{
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        word-spacing: 2px;
+        display: -webkit-box; 
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: 5; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+    .content .buttons-socials{
+        display: flex;
+    justify-content: space-between;
+    }
+    .buttons-socials button{
+     background-color: black;
+     color: white;
+     font-size: 16px;
+     padding:7px;
+     width:160px;
+     border-radius: 50px;
+     align-items: center;
+     gap: 10px;
+     border: none;
+     outline: none;
+     font-weight: bold;
+    }
+    .buttons-socials i{
+        font-size: 13px;
+    }
+    .buttons-socials .socials{
+      display: flex;
+    gap:20px;
+    }
+    .socials .icons{
+        display: flex;
+        gap:30px;
+    }
+    .icons i{
+        font-size: 30px;
+    }
+    
+    .chapters-cont {
+        background-color: #fff;
+        width:100%;
+        margin:auto;
+       border-radius: 5px;
+       padding-bottom: 30px;
+    }
+    .chapters{
+        display: flex;
+        flex-direction: column;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .head{
+        display: flex;
+        width: 100%;
+        padding: 13px 13px 16px 13px;
+        border-top: 1px solid rgb(211, 211, 211);
+        text-align: center;
+        justify-content: space-between;
+    }
+    .head .announcement{
+      gap:20px;
+      display: flex;
+      align-items: center;
+      font-family: sans-serif;
+    }
+    .announcement .status{
+        font-size: 16px;
+        color: white;
+        background-color: rgb(12, 12, 12);
+        padding:6px 15px 6px 15px;
+        border-radius: 50px;
+        font-weight: bold;
+    }
+    .announcement i{
+        font-size: 25px;
+        color: black;
+    }
+    .head .down-info{
+        display: flex;
+        gap:15px;
+        align-items: center;
+    }
+    .down-info i{
+        font-size: 25px;
+    }
+    .down-info .update{
+        background-color: #00ADB5;
+        color: white;
+        font-weight: bold;
+        align-items: center;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    .down-info button{
+        background: transparent;
+        border: none;
+        outline: 0;
+    }
+    .down-info button:hover{
+        cursor: pointer;
+    }
+    
+    .chapter .lock{
+        background-color: #faf6f6;
+    }
+    .lock img{
+        opacity: 70%;
+    }
+    .lock .free-coins{
+     display: flex;
+     gap:200px;
+     margin-right:90px;
+     align-items: center;
+    }
+    .free-coins h5{
+        font-size: 17px;
+        color: #00ADB5;
+    }
+    .free-coins p{
+        font-size: 17px;
+        color: gray;
+    }
+    .chapter {
+        display: flex;
+        flex-direction: column;
+    }
+    .chapter a{
+        text-decoration: none;
+    }
+    .chapter li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: #cdcdce 1px solid;
+        list-style-type: none;
+    }
+    .chapter .episode{
+        display: flex;
+        align-items: center;
+        gap:30px;
+        color: black;
+        
+    }
+    
+    .episode h4{
+        font-weight: normal;
+    }
+    
+    .episode img{
+        height: 83px;
+        width:80px;
+        padding:1px;
+        position: relative;
+    }
+    .episode i{
+    position: absolute;
+    z-index: 1;
+    font-size: 28px;
+    color: #00ADB5;
+    }
+    
+    .chapter .date-heart-rank{
+        display: flex;
+        gap:35px;
+        margin-right: 8%;
+        align-items: center;
+    }
+    .date-heart-rank p{
+        color: gray;
+        font-size: 15px;
+    }
+    .date-heart-rank h5{
+        color: black;
+        margin-left: 50px;
+        font-size: 18px;
+    }
+    .chapters-cont li:hover{
+        background-color: #f1f1f1;
+    }
+    .number{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 50px;
+      
+      }
+      .num{
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+      }
+      .num1{
+        text-decoration: none;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        background-color: #00ADB5;
+        text-align: center;
+        font-size: medium;
+        position: relative;
+      }
+     
+     .recommended-cont{
+        display: none;
+        flex-direction: column;
+        align-items: left;
+        margin: 80px 9% 0 10% ;
+        height: 40vh;
+     }
+     .recommended{
+      padding: 10px 0;
+     }
+     .recommended h3{
+        font-size: medium;
+     }
+     .recommended-cont .comics{
+        display: flex;
+     }
+     .comics{
+        gap: 30px;
+     }
+     .comics li{
+        background-color: white;
+        padding:5Spx 65px 5px 0;
+        display: flex;
+        flex-direction: row ;
+        gap:30px;
+     }
+     .comics img{
+        height: 98px;
+        width:92px;
+    }
+    .comics a{
+        text-decoration: none;
+    }
+      
+    .comics .detail{
+        margin: auto;
+    }
+    .detail h4{
+        font-size: 15px;
+          color: black;
+          padding: 5px 0 5px 0;
+    }
+    .detail h5{
+        color: #00ADB5;
+        padding: 8px 3px 5px 0;
+    }
+    .detail p{
+        color: black;
+        font-size: 12px;
+    }
+    
+    .comics li:hover{
+        cursor: pointer;
+        background-color: #f5f5f5;
+    }
+    
+    footer{
+        background-color: #EEEEEE;
+        padding: 50px;
+      }
+      .media{
+        display: flex;
+        font-size: large;
+        justify-content: center;
+        gap: 30px;
+      }
+      .f_others{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+      }
+      .credits{
+        font-size: small;
+        text-align: center;
+      }
+      .number{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 50px;
+      
+      }
+      .num{
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+      }
+      .num1{
+        text-decoration: none;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        background-color: #00ADB5;
+        text-align: center;
+        font-size: medium;
+        position: relative;
+      }
+    
+    .info .romance{
+        color:red;
+    }
+    .info .action{
+        color: blue;
+    }
+    .info .school{
+        color: orange;
+    }
+    .info .comedy{
+        color: rgb(247, 88, 114);
+    }
+    .info .fantasy{
+        color: purple;
+    }
+    .info .thriller{
+        color:#370707;
+    }
+    .info .mystery{
+        color:black;
+    }
+    .info .historical{
+        color:rgb(185, 95, 59);
+    }
+    .info .slice{
+        color:rgb(241, 17, 193);
+    }
+    .info .supernatural{
+        color:rgb(195, 106, 230);
+    }
+    .info .sci-fi{
+        color: gray;
+    }
+    
+      /* banner images */
+      .comic-cont1{
+        background: url(../../Images/banner212.jpg) no-repeat;
+        height: 350px;
+        width: 1500px; 
+        background-size: 1420px;
+    }
+    .comic-cont2{
+        background: url(../../Images/SuitArmor.jpg)no-repeat right;
+        height: 350px;
+        width:100%;
+        background-size: cover;
+    }
+    .comic-cont3{
+        background: url(../../Images/alien.jpg)no-repeat right;
+        height: 350px;
+        width:100%;
+        background-size: cover;
+    }
+    .comic-cont4{
+        background: url(../../Images/J&N.jpg)no-repeat right;
+        height: 350px;
+        width:100%;
+        background-size: cover;
+    }
+    .comic-cont5{
+        background: url(../../Images/CastleSwimmer.jpg) no-repeat right;
+        height: 350px;
+        width:100%;
+        background-size: cover;
+    }
+    .comic-cont6{
+        background: url(../../Images/TheGuyUpstairs.jpg)no-repeat right;
+        height: 350px;
+        width:100%;
+        background-size: cover;
+    }
+    .comic-cont7{
+        background: url(../../Images/CourmetHound.jpg)no-repeat right;
+        height: 350px;
+        width:100%;
+        background-size: cover;
+    }
+    .comic-cont8{
+        background: url(../../Images/TheAngelintheForest.jpg);
+        height: 350px;
+        background-size: 1420px;
+    }
+    .comic-cont9{
+        background: url(../../Images/Covenant.jpg)  no-repeat right;
+        height: 350px;
+       width: 100%;
+        background-size: cover;
+    }
+    .comic-cont10{
+        background: url(../../Images/Unordinary.jpg)no-repeat right;
+        height: 350px;
+        width:100%;
+        background-size: cover;
+    }
+    .comic-cont11{
+        background: url(../../Images/CityofBlank.png) no-repeat right ;
+        height: 350px;
+        
+        background-size:contain;
+    }
+    .chapter-container11{
+        background: url(../../Images/sample.jpg) center;
+        height: 350px;
+     width: 100%;
+        background-size:fill;
+    }
+    
+    .comic-cont12{
+        background: url(../../Images/IHateThatILoveYou.jpg)no-repeat right;
+        height: 350px;
+        width:100%;
+        background-size: cover;
+    }
+    .comic-cont13{
+        background: url(../../Images/Darbi.jpg)no-repeat right;
+        height: 350px;
+        
+        background-size: cover;
+    }
+    .comic-cont14{
+        background-color: #cdcdce;
+        height: 350px;
+        width: 100%;
+    }
+    .comic-cont15{
+        background: linear-gradient( rgb(59, 59, 116), rgb(121, 121, 121) );
+        height: 350px;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .comic-cont16{
+        background: linear-gradient( rgb(81, 156, 255), rgb(178, 220, 255));
+        height: 350px;
+        background-size: cover;
+    }
+    
+    .comic-cont17{
+        background:url(../Images/series1.jpg) no-repeat center;
+        background-color: rgb(15, 23, 69);
+        height: 350px;
+        width: 100%;
+        background-size: contain;
+       
+    }
+    
+    .comic-cont18{
+        background:url(../Images/series2.jpg) no-repeat center;
+        background-color: black;
+        height: 350px;
+        width: 100%;
+        background-size: contain;
+    }
+    
+    
+    .bx {
+        padding: 50px 15px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .bx p{
+        padding-bottom: 30px;
+      }
+      .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 200px;
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 30%;
+        border-radius: 20px;
+      }
+      #fame{
+        width: 47%;
+        height: 100%;
+        overflow: auto;
+        padding: 0 10px;
+      }
+      #myModal,#mymyModal,#dal{
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .ele{
+        padding: 8px 20px;
+        background-color: #393E46;
+        color: #fff;
+        border-radius: 50px;
+        font-size: medium;
+        margin-right: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+      }
+
+}
+
+.dark-mode .lock{
+    background-color: rgb(29, 28, 28);
+    opacity: 80%;
+  }

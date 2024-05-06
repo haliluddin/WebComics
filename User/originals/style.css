@@ -1,0 +1,510 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+background-color: #faf9f6;
+}
+.logoh{
+height: 80px;
+ width: 100px;
+ margin-right: 15px;
+
+}
+#clicked{
+color: #00ADB5;
+}
+body{
+background-color: #FAF9F6;
+}
+header{
+ display: flex;
+ padding: 10px;
+  align-items: center;
+  justify-content:center;
+  background-color: white;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+#click {
+border-bottom: 1px solid #02767c ;
+
+}
+#click a{
+color:#02767c;
+border: none;
+}
+li,a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:large;
+}
+.nav{
+ display: flex;
+ margin-right: 20px;
+}
+
+.nav li {
+  list-style-type: none;
+  padding:15px;
+}
+.nav li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.15;
+  font-weight: bolder;
+  letter-spacing: 1px;
+
+}
+.nav li:hover a{
+  color: #00ADB5;
+  padding :3px;
+}
+.user-library-inbox {
+  display: flex;
+  padding: 10px;
+  gap:20px;
+  align-items: center;
+}
+.user-library-inbox i{
+color: black;
+font-size: 28px;
+transition: opacity 0.15s;
+}
+
+.user-library-inbox i:hover{
+opacity: 70%;
+}
+.drop-down img{
+padding: 3px;
+width: 35px;
+height:35px;
+border-radius: 50%;
+}
+
+.drop-down button{
+background: transparent;
+border: none;
+outline: none;
+cursor: pointer;
+transition: opacity 0.15s;
+}
+
+.drop-down {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+left: 0;
+background-color: #f9f9f9;
+min-width: 190px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 2;
+border-radius: 10px;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+
+}
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+.drop-down:hover .dropdown-content {
+display: block;
+
+}
+.drop-down:hover button{
+opacity: 70%;
+}
+.dropdown-content i{
+font-size: 15px;
+
+}
+.publish{
+background-color: black;
+color: #fff;
+padding: 8px;
+padding-left:25px ;
+padding-right:25px ;
+border-radius: 50px;
+
+font-weight: bolder;
+text-decoration: none; 
+border: none;
+transition: background-color 0.15s, color 1s;
+cursor: pointer;
+}
+.search-bar{
+background-color:white;
+display: flex;
+align-items: center;
+border-radius: 50px;
+padding: 8px;
+border: rgb(207, 203, 203) 1px solid;
+}
+.search-bar input{
+ background: transparent;
+ border: 0;
+ outline: none;
+ color: black;
+}
+.search-bar button{
+background-color: #fff;
+border: none;
+}
+/* nav-tablet*/ 
+.nav-tablet{
+display: flex;
+margin-right: 150px;
+display: none;
+}
+
+.nav-tablet li {
+ list-style-type: none;
+ padding:15px;
+}
+.nav-tablet li a {
+ color: black;
+ text-decoration: none;
+ transition: color 0.15;
+ font-weight: bolder;
+ letter-spacing: 1px;
+
+}
+.nav-tablet li:hover a{
+ color: #00ADB5;
+ padding :3px;
+}
+/* end nav-tablet*/
+.header-tablet{display: none;}
+nav{
+  position: sticky;
+  text-align: center;
+  color: black;
+  top: 0;
+  z-index: 0;
+}
+.sub-nav{
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+  justify-content: center;
+  border-bottom: rgb(207, 203, 203) 1px solid;
+  border-top: rgb(207, 203, 203) 1px solid;
+  padding: 20px;
+  background-color: white;
+}
+.genre a:hover{
+  color: #00ADB5;
+}
+.genre a{
+  font-size: small;
+  text-decoration: none;
+  margin: 18px;
+  color: #393E46;
+  font-weight: bold;
+}
+.serieslist{
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-areas: '1 2 3 4 5 6';
+}
+.seli{display: none;}
+.serieslist img{
+  height: 200px;
+  width: 164px;
+}
+.serieslist a{
+  font-size: small;
+  color:#393E46;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  padding: 5px;
+}
+
+.serieslist a:hover,a:hover .heart{
+  background-color: #00ADB5;
+  color: white;
+}
+.heart:hover{
+  color: white;
+}
+.heart{
+  color: #00ADB5;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.type{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+select{
+  border: none;
+  background-color: #faf9f6;
+  font-size: medium;
+  outline: 0;
+  padding-right: 10px;
+}
+.days a{
+  font-size: medium;
+    text-decoration: none;
+    color: #393E46;
+    font-weight: bold;
+}
+.day a:hover{
+  color: #00ADB5;
+}
+.day{
+  width: 150px;
+    text-align: center;
+    height: 45px;
+    padding-top: 13px;
+}
+.days{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 7px;
+    margin: 20px 0;
+}
+
+.daysandcomplete{
+  display: none;
+}
+.this a{
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.this{
+    background-color: #00ADB5;
+    width: 150px;
+    text-align: center;
+    height: 45px;
+    padding-top: 13px;
+}
+.sl{
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  grid-template-areas: '1 2 3 4 5';
+  padding-bottom: 20px;
+}
+.sl img{
+  height: 250px;
+  width: 200px;
+}
+.sl a{
+  font-size: medium;
+  color:#393E46;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  padding: 5px;
+}
+.sl a:hover,a:hover .ht{
+  background-color: #00ADB5;
+  color: white;
+}
+.ht{
+  color: #00ADB5;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.te{
+  font-weight: normal;
+  margin-bottom: 20px;
+  padding-top: 90px;
+}
+#ongoing{
+  margin-bottom: 90px;
+}
+footer{
+  background-color: #EEEEEE;
+  padding: 50px;
+}
+.media{
+  display: flex;
+  font-size: large;
+  justify-content: center;
+  gap: 30px;
+}
+.f_others{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+.credits{
+  font-size: small;
+  text-align: center;
+}
+section{
+  display: flex;
+  justify-content: center;
+}
+.sl h2,.serieslist h2{
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.serieslist h2{
+  width: 164px;
+}
+.f_others a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Dark mode styles */
+.user-library-inbox .mode{
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+.user-library-inbox .mode i{
+  color: black;
+  font-size: 27px;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0;
+}
+
+.light-mode #light{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+.dark-mode #dark{
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: none;
+  border:none;
+}
+.dark-mode #dark-icon i{
+  color: white;
+}
+.dark-mode #light button{
+  color: #000;
+  background-color: white;
+  border-radius: 50px;
+}
+.dark-mode #theme-toggle i{
+  color: white;
+}
+.dark-mode #shadow{
+  box-shadow: none;
+}
+
+.dark-mode #coins{
+  background-color: rgb(126, 126, 126);
+}
+
+.dark-mode .sub-nav{
+  background-color: #000;
+}
+.dark-mode #container{
+  background-color: #000;
+  border-bottom:1px solid gray;
+  border-top:1px solid gray;
+}
+.dark-mode .f_others a{
+  color: white;
+ }
+.dark-mode header{
+  background-color: #000;
+}
+.dark-mode .nav a{
+  background-color: #000;
+  color: white;
+}
+.dark-mode .profile-search i{
+  color: white;
+}
+.dark-mode .publish{
+  background-color: white;
+  color: #000;
+}
+
+.dark-mode .genre a{
+  color: white;
+}
+
+.dark-mode .menu select{
+  background-color: #000;
+  color: white;
+}
+.dark-mode footer{
+  background-color: #000;
+}
+.dark-mode .search-bar i{
+  color: #000;
+}
+.dark-mode .dropdown-content{
+  background-color: white;
+  color: white;
+}
+.dark-mode .dropdown-content i{
+  color: #000;
+}
+.dark-mode .modal-content .save{
+  background-color: #000;
+}
+.dark-mode .coins p{
+  background-color: #000;
+}
+.dark-mode .coins h2{
+  color: #000;
+}
+.dark-mode .user-library-inbox i{
+  color: white;
+}
+.dark-mode .serieslist a{
+  background-color: rgb(51, 48, 48);
+  color: white;
+}
+.dark-mode .serieslist a:hover{
+  background-color: #00ADB5;
+}
+.dark-mode .details h4{
+  color: white;
+}
+.dark-mode .details p{
+  color: rgb(187, 186, 186);
+}
+.dark-mode .details h1{
+  color: white;
+}
+.dark-mode .days a{
+  color: white
+}
+.dark-mode .sl a{
+  background-color: #393E46;
+  color: white;
+}
+.dark-mode .sl a:hover{
+  background-color: #00ADB5;
+}
+/* DARKMODE */
+

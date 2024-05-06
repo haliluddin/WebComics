@@ -1,0 +1,404 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button:hover{
+  cursor: pointer;
+}
+/* Header Start */
+
+ /* TABLET */
+  /* Header for tablet */
+  .nav i{
+    display: none;
+   }
+   .button-search img{
+     display: none;
+     height: 70px;
+     width: 90px;
+   }
+   /* Header for tablet */
+  /* TABLET */
+
+.logoh{
+  height: 80px;
+  width: 100px;
+}
+
+#clicked{
+  color: #00ADB5;
+}
+header{
+   display: flex;
+  
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    padding: 10px ;
+}
+
+li,a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+}
+nav{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.nav{
+   display: flex;
+}
+
+.nav li {
+    list-style-type: none;
+    padding:15px;
+}
+.nav li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.15;
+    font-weight: bolder;
+    letter-spacing: 1px;
+
+}
+.nav li:hover a{
+    color: #00ADB5;
+    padding :3px;
+}
+
+.button-search{
+  display: flex;
+  gap:10px;
+ 
+}
+.button-search .login-publish{
+  display: flex;
+  gap:10px;
+  
+}
+.login-publish button{
+  padding: 8px;
+  padding-left:25px ;
+  padding-right:25px ;
+  border-radius: 50px;
+  font-weight: bolder;
+  text-decoration: none; 
+  border: none;
+  transition: background-color 0.15s, color 1s;
+  cursor: pointer;
+  border: rgb(207, 203, 203) 1px solid;
+}
+.login-publish .publish{
+    background-color: black;
+    color: #fff;
+}
+
+.login-publish .login{
+    background-color: white;
+    color: black;
+}
+
+.search-bar{
+ background-color:white;
+ display: flex;
+ align-items: center;
+ border-radius: 50px;
+padding: 8px;
+border: rgb(207, 203, 203) 1px solid;
+}
+.search-bar input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: black;
+}
+.search-bar button{
+  background-color: #fff;
+  border: none;
+}
+  /* Header END */
+
+
+
+main{
+  background-color: white;
+}
+
+.show{
+  display: none;
+}
+
+main nav{
+  width: 100%;
+    position: sticky;
+    text-align: center;
+    color: black;
+    top: 0;
+    z-index: 0;
+}
+.sub-nav{
+  width: 100%; 
+   display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+.click a{
+    font-size: small;
+    text-decoration: none;
+    margin: 18px;
+    color: #00ADB5;
+    font-weight: bold;
+  }
+  .genre a{
+    font-size: small;
+    text-decoration: none;
+    margin: 18px;
+    color: #393E46;
+    font-weight: bold;
+  }
+.others{
+  border: none;
+  background-color: #EEEEEE;
+  color: #393E46;
+  font-weight: bold;
+}
+.genre:hover a{
+  color: #00ADB5;
+}
+.dropdown{
+  width:140px;
+  
+  }
+  .dropdown .dropBtn{
+    background-color: white;
+    border: 1px solid rgb(202, 202, 202);
+    color: black;
+    padding:1px 2px 1px 0px;
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin-bottom: 5px;
+  }
+  .dropBtn i{
+    font-size: 13px;
+  }
+
+  .dropdown .other-content{
+    display: flex;
+    flex-direction: column;
+    padding:15px 0px 10px 0px;
+    border: 1px solid gray;
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    gap:10px;
+  }
+  .dropBtn:hover{
+    cursor: pointer;
+  }
+  .other-content a{
+    padding:5px 6px 5px 6px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .other-content a:hover{
+    background-color: rgb(184, 176, 176);
+  }
+  
+  .drop{
+    display: none;
+  }
+
+
+.menu i{
+  color: gray;
+}
+.menu select{
+  appearance: none; /* remove default appearance set by the browser */
+  outline: none; /* remove the outline shown on focus */
+  cursor: pointer; /* change the mouse cursor icon */
+  color: black; /* text color */
+  background: transparent;
+  border: none;
+  border-radius: 5px;  /* round the border corners */
+  padding: 5px 10px;
+  width: 200px;
+  height: 40px;
+  font-family: serif;
+  font-size: 16px;
+
+  text-align: right;
+  font-family: sans-serif;
+  color:gray;
+}
+.menu select:focus {
+  outline: none;
+}
+
+
+.comics-container{
+  width: 100%;
+ 
+}
+.comics-container .category{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  width: 80%;
+  margin: auto;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+.category .action-sort{
+  display: flex;
+  justify-content: space-between;
+}
+.action-sort h2{
+  color: #00ADB5;
+}
+.category .comic-list{
+  display: flex;
+ width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.comic-list a{
+  text-decoration: none;
+  color: #00ADB5;
+}
+.comic-list li{
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  gap:5px;
+  font-size: 15px;
+  background-color: #EEEEEE;
+  padding:5px;
+}
+.comic-list li img{
+  width: 100%;
+}
+.comic-list h3{
+  color: black;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+ 
+}
+.comic-list .heart{
+   font-size: 14px;
+}
+
+/* Footer */
+
+footer{
+  background-color: #EEEEEE;
+  padding: 50px;
+}
+.media{
+  display: flex;
+  font-size: large;
+  justify-content: center;
+  gap: 30px;
+  
+}
+.f_others{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.f_others a{
+  text-decoration: none;
+   color: #000;
+    }
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+.credits{
+  font-size: small;
+  text-align: center;
+}
+.number{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px;
+
+}
+.num{
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+}
+.num1{
+  text-decoration: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #00ADB5;
+  text-align: center;
+  font-size: medium;
+  position: relative;
+}
+.click a{
+  font-size: small;
+  text-decoration: none;
+  margin: 18px;
+  color: #00ADB5;
+  font-weight: bold;
+}
+/* Footer */
+
+  .sub-nav-tablet{
+    display: none;
+  }
+  .comic-list1{
+    list-style: none;
+    display: none;
+    gap: 5px;
+    width: 100%;
+    padding: 9px;
+ }
+
+ .comic-list1 li {
+    padding: 2px;
+    width: 235px;
+   
+    font-size:14px;
+    background-color: #EEEEEE;
+  }
+   .comic-list1 .heart i{
+    color: #00ADB5;
+    font-size: 13px;
+    padding-top:10px;
+  }
+  
+   .comic-list1 a{
+    text-decoration: none;
+    color:black;
+  
+  } .comic-list1 img {
+    width: 100%;
+   height: 100%;
+  }
+
+
+  

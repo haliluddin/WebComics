@@ -1,0 +1,144 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: url(../Images/loginBG1.png);
+}
+
+
+.container{
+  background:transparent;
+display: flex;
+width: 70%;
+height: 500px;
+margin: 3% auto;
+justify-content: center;
+padding: 26px;
+backdrop-filter: blur(5px);
+}
+.logo-continue{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #00ADB5 ;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  padding: 10px;
+}
+.logo-continue h4{
+  color: white;
+}
+.logo-continue .logo{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 40px;
+}
+.logo img{
+  width: 90px;
+  height: 90px;
+}
+
+.logo-continue .continue{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.continue img{
+  width: 30px;
+  height: 30px;
+}
+.continue button{
+  display: flex;
+  padding: 5px 13px;
+  gap: 40px;
+  align-items: center;
+  width: 200px;
+  outline: none;
+  border: 1px solid rgb(214, 214, 214);
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.email-form{
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+ 
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  align-items: center;
+  text-align: center;
+}
+.email{
+ padding: 14px 20px;
+  border: 1px solid #00ADB5;
+  border-radius: 50px;
+  gap: 10px;
+  display: flex;
+}
+.email input{
+  width: 250px;
+background:transparent;
+font-size: 14px;
+border: none;
+outline: none;
+}
+.password{
+  padding: 14px 20px;
+   border: 1px solid #00ADB5;
+   border-radius: 50px;
+   gap: 10px;
+   display: flex;
+ }
+ .password input{
+   width: 250px;
+ background:transparent;
+ font-size: 14px;
+ border: none;
+ outline: none;
+ }
+
+form button{
+  padding: 10px 20px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  background-color: #08c0ca;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+form button a{
+  padding: 10px 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.forgot-signup{
+  display: flex;
+  gap: 10px;
+  padding-top: 40px;
+}
+.forgot-signup a{
+  color: #00ADB5;
+}
+.container button:hover{
+  filter: brightness(90%);
+  cursor: pointer;
+}

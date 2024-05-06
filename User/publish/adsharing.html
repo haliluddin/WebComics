@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../others/style.css">
+    </head>
+    <body>
+        <header> 
+            <img src="../Images/logo.png" class="logoh">
+            <nav> 
+                <ul class="nav">
+                    <li ><a href="../index(user).html" > HOME </a></li>
+                    <li><a href="../originals/originals.html"> ORIGINALS </a></li>
+                    <li><a href="../genres/action.html"> GENRES </a></li>
+                    <li><a href="../popular/popular.html" > POPULAR</a></li>
+                    <li><a href="../canvas/canvas.html"> CANVAS </a></li>
+                </ul> 
+            </nav>
+               
+            <div class="user-library-inbox">
+                <a href="../publish/dashboard.html"><button class="publish"> PUBLISH</button></a>
+                <a href="../library/viewed.html"><i class="fa-solid fa-book-open-reader" ></i></a>
+                
+    
+                <div class="drop-down">
+                    <button><img src="../Images/canvas/series3.jpg" class="user"></button>
+                    <div class="dropdowncontent">
+                        
+                        <a href="../others/account.html"> <i class="fa-solid fa-user"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account</a>
+                        <a  id="naila"><i class="fa-solid fa-shop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coin Shop</a>
+                        <a href="../footer/help.html"><i class="fa-solid fa-question"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help </i></a>
+                        <a href="../../index.html"><i class="fa-solid fa-right-from-bracket" style="color:#02767c; font-weight: bold;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#02767c; font-weight: bold;"> Log out</span></a>
+                      </div>
+                </div>
+                
+               </div>
+    
+               <form action="#" class="search-bar">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+            </form>
+        </header>
+        <div id="athena" class="modal">
+            <div class="modal-content">
+                <div class="dragon">
+                    <div style="display: flex; gap: 30px;">
+                        <span class="se">&times;</span>
+                        <h2>Coin Shop</h2>
+                    </div>
+                    <div class="saved">
+                        <i class="fa-solid fa-coins"></i>
+                        <p>13</p>
+                    </div>
+                </div>
+                <h3>Unlock episodes and support creators!</h3>
+                <div class="coins">
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/6.png">
+                        <h2>10</h2>
+                        <p>US$ 0.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/6.png">
+                        <h2>50 <span>+ 2</span></h2>
+                        <p>US$ 4.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/3.png">
+                        <h2>100 <span>+ 8</span></h2>
+                        <p>US$ 9.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/4.png">
+                        <h2>300 <span>+ 30</span></h2>
+                        <p>US$ 29.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/2.png">
+                        <h2>500 <span>+ 60</span></h2>
+                        <p>US$ 49.99</p>
+                    </a>
+                    <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank">
+                        <img src="../others/5.png">
+                        <h2>1000 <span>+ 150</span></h2>
+                        <p>US$ 99.99</p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    
+        <script>
+            var ohayo = document.getElementById("athena");
+            var darling = document.getElementById("naila");
+            var span = document.getElementsByClassName("se")[0];
+            darling.onclick = function() {
+              ohayo.style.display = "block";
+            }
+            span.onclick = function() {
+              ohayo.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == ohayo) {
+                ohayo.style.display = "none";
+              }
+            }
+            </script>
+    <main>
+        <nav>
+            <ul class="sub-nav">
+                <li class="genre"><a href="dashboard.html"> DASHBOARD </a></li>
+                <li class="genre"><a href="profile.html"> MY PROFILE PAGE </a></li>
+                <li class="genre"><a href="makemoney.html"> MAKE MONEY </a></li>
+            </ul>
+        </nav>
+        <div class="food">
+            <div>
+                <div class="created">
+                    <div>
+                        <div class="flx">
+                            <h3>Current Balance</h3>
+                            <i class="fa-regular fa-circle-question nai"></i>
+                        </div>
+                        <div class="cbandp">
+                            <h1>$24.42</h1>
+                            <div style="display: flex;">
+                                <div style="border:2px solid black; width: 150px;"></div>
+                                <div style="border:2px solid gray; width: 350px;"></div>
+                            </div>
+                            <div class="bal">
+                                <p>Previous Balance: $9.64</p>
+                                <p>Apr Ad&Coin: $14.78</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <div class="flx">
+                            <h3>Payment</h3>
+                            <i class="fa-solid fa-circle-info nai"></i>
+                        </div>
+                        <div class="cbandp">
+                            <div style="display: flex; gap: 15px;">
+                                <p style="border-right: rgb(207, 203, 203) 1px solid; padding-right: 15px;">Amount Due</p>
+                                <p>$0</p>
+                            </div>
+                            <div class="reg">
+                                <p class="sma">Registered</p>
+                                <p>Payment information has been registered successfully.</p>
+                            </div>
+                            <a href="#" id="btn">
+                                <i class="fa-solid fa-clock-rotate-left lft"></i>
+                                <p>Payment History</p>
+                            </a>
+                            <div id="dal" class="modal2x">
+                                <div class="modal-content2x" id="nt">
+                                    <div style="position: sticky; top: 0;">
+                                        <div class="calarian">
+                                            <span class="exit">&times;</span>
+                                            <h2>Payment History</h2>
+                                        </div>
+                                    </div><br>
+                                    <p style="margin-top: 15px;">Current Payment Method: Credit/Debit Card **** **** **** 2526</p>
+                                    <div class="dont">
+                                        <div class="make">
+                                            <p>Lifetime Ad Revenue</p>
+                                            <h1>$324</h1>
+                                        </div>
+                                        <div class="make">
+                                            <p>Previous Payments</p>
+                                            <h1>$300</h1>
+                                        </div>
+                                        <div class="make">
+                                            <p>Current Balance</p>
+                                            <h1>$24.42</h1>
+                                        </div>
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <th style="border: none;">Date</th>
+                                            <th style="border: none;">Amount</th>
+                                            <th style="border: none;">Status</th>
+                                            <th style="width: 205px; border: none;">Payment Method</th>
+                                        </tr>
+                                        <tr>
+                                            <td>5/7/2024</td>
+                                            <td>$100</td>
+                                            <td>Completed</td>
+                                            <td>Credit/Debit Card **** 2526</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4/16/2024</td>
+                                            <td>$100</td>
+                                            <td>Completed</td>
+                                            <td>Credit/Debit Card **** 2526</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3/25/2024</td>
+                                            <td>$100</td>
+                                            <td>Completed</td>
+                                            <td>Credit/Debit Card **** 2526</td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="pay_info.html" class="epi">
+                            <p>Edit Payment Information</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            <div class="toc">
+                <h4>Activate Ads</h4><br>
+                <p>Ads can only be displayed on series that meet the following requirements:</p><br>
+                <div class="rules">
+                    <h4>Viewer Ads</h4>
+                    <p>1. Series with global monthly page view of 40,000 or higher<br>
+                    2. Series with total of 1,000 subscribers or higher</p><br>
+                    
+                    <h4>Reward Ads</h4>
+                    <p>1. Series with Viewer Ads<br>
+                    2. Series with global monthly page view of 200,000 or higher<br>
+                    3. Series with at least 3 episodes.</p><br>
+                 
+                    <h4>Final Ads</h4>
+                    <p>1. Complete Series with Coins</p>
+                </div>
+                <h4>Activate Coins</h4><br>
+                <p>Coins can only be displayed on series that meet the following requirements:</p><br>
+                <div class="rules">
+                    <p>1. Series with Reward Ads<br>
+                    2. Series with global monthly page view of 1,000,000 or higher<br>
+                    3. Series with at least 10 episodes.</p><br><br>
+                    <p>Series must follow content guidelines which includes: no nudity, explicit sexual content, gratuitous violence, and more. Full details <a href="../footer/community.html">HERE</a>.<br>
+                    Your application may be rejected at the sole discretion of WEBCOMIC if your content or activities violate our <a href="../footer/terms.html">Terms of Use</a> and <a href="../footer/terms.html">Program Terms of Service</a>.</p>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>Series</th>
+                    <th>Revenue</th>
+                    <th colspan="2">Viewer Ads</th>
+                    <th colspan="2">Reward Ads</th>
+                    <th colspan="2">Coins</th>
+                    <th colspan="2">Final Ads</th>
+                </tr>
+                <tr>
+                    <td id="title">Programming Languages</td>
+                    <td>$243.315</td>
+                    <td>ON</td>
+                    <td class="on">Cancel</td>
+                    <td>ON</td>
+                    <td class="on">Cancel</td>
+                    <td>ON</td>
+                    <td class="on">Cancel</td>
+                    <td>ON</td>
+                    <td class="on">Cancel</td>
+                </tr>
+                <tr>
+                    <td id="title">Web Development <a href="stats2.html"> Stats</a></td>
+                    <td>$81.105</td>
+                    <td>-</td>
+                    <td class="ap" onclick="document.getElementById('id04').style.display='block'"><button>Apply</button></td>
+                    <td>-</td>
+                    <td class="ap" id="btnbtn"><button>Apply</button></td>
+                    <td>-</td>
+                    <td class="ap" id="ntbntb"><button>Apply</button></td>
+                    <td>-</td>
+                    <td class="ap" onclick="document.getElementById('id05').style.display='block'"><button>Complete</button></td>
+                </tr>
+                <tr>
+                    <td id="title">Hello, World! <a href="stats3.html"> Stats</a></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="on">Not Available</td>
+                    <td>-</td>
+                    <td class="on">Not Available</td>
+                    <td>-</td>
+                    <td class="on">Not Available</td>
+                    <td>-</td>
+                    <td class="on">Not Available</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+        <div id="id01" class="modal2x">
+            <form class="modal-content2x" action="adsharing.html">
+                <div class="bx" style="font-size: 15px;">
+                    <h4>Thank you for applying for Viewer Ads!</h4><br>
+                    <p>Your series Web Development will be reviewed for Viewer Ads.
+                    <br><br>The result will be sent to you via email and updated to the MAKE MONEY tab in 3 to 5 business days.</p>
+                    <button type="submit" class="ele" style="background-color: #00ADB5;">Confirm</button>
+                    <button type="button" onclick="goBack1()" class="ele">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="id02" class="modal2x">
+            <form class="modal-content2x" action="adsharing.html">
+                <div class="bx" style="font-size: 15px;">
+                    <h4>Thank you for applying for Reward Ads!</h4><br>
+                    <p>Your series Web Development will be reviewed for Reward Ads.
+                    <br><br>The result will be sent to you via email and updated to the MAKE MONEY tab in 3 to 5 business days.</p>
+                    <button type="submit" class="ele" style="background-color: #00ADB5;">Confirm</button>
+                    <button type="button" onclick="goBack2()" class="ele">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="id03" class="modal2x">
+            <form class="modal-content2x" action="adsharing.html">
+                <div class="bx" style="font-size: 15px;">
+                    <h4>Thank you for applying for Coins!</h4><br>
+                    <p>Your series Web Development will be reviewed for Coins.
+                    <br><br>The result will be sent to you via email and updated to the MAKE MONEY tab in 3 to 5 business days.</p>
+                    <button type="submit" class="ele" style="background-color: #00ADB5;">Confirm</button>
+                    <button type="button" onclick="goBack3()" class="ele">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="id06" class="modal2x">
+            <form class="modal-content2x" action="adsharing.html">
+                <div class="bx" style="font-size: 15px;">
+                    <h4>Thank you for applying for Final Ads!</h4><br>
+                    <p>Your series Web Development will be reviewed for Final Ads.
+                    <br><br>The result will be sent to you via email and updated to the MAKE MONEY tab in 3 to 5 business days.</p>
+                    <button type="submit" class="ele" style="background-color: #00ADB5;">Confirm</button>
+                    <button type="button" onclick="goBack4()" class="ele">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="id04" class="modal2x">
+            <div class="modal-content2x">
+                <div class="bx" style="font-size: 15px;">
+                    <p>Viewer Ads are image ads that appear at the end of the episodes.
+                    All of the episodes of this series will automatically earned Viewer Ads.</p>
+                    <button class="ele" style="background-color: #00ADB5;" onclick="goFront1()">Apply</button>
+                    <button onclick="document.getElementById('id04').style.display='none'" class="ele">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div id="daldal" class="modal2x">
+            <div class="modal-content2x" id="modcon">
+                    <br><h4>Please read and agree to the terms below to apply for Reward Ads.</h4><br>
+                    <ol class="reward">
+                        <li>Reward Ads are video ads that appear before the episodes can be accessed.</li><br>
+                        <li>The 3 new episodes of this series will be locked behind a video ad for 7 days.</li><br>
+                        <li>Unable to update within 7 days and so on will cancel 1 Reward Ad until it doesn't have anymore.</li><br>
+                        <li>Update will be submitted for review and will be published at chosen Publish Schedule once approved.</li><br>
+                        <li>Update must be 3 days early of Publish Schedule as reviewing may take days to approved.</li><br>
+                        <li>2 or more updates in a week will scheduled other episode next week of Publish Schedule</li><br>
+                    </ol>
+                    <br><h4>Publish Schedule</h4><br>
+                    <div class="sched">
+                        <label for="mon"><input type="radio" id="mon" name="days" checked> Monday</label>
+                        <label for="tue"><input type="radio" id="tue" name="days"> Tuesday</label>
+                        <label for="wed"><input type="radio" id="wed" name="days"> Wednesday</label>
+                        <label for="thu"><input type="radio" id="thu" name="days"> Thursday</label>
+                        <label for="fri"><input type="radio" id="fri" name="days"> Friday</label>
+                        <label for="sat"><input type="radio" id="sat" name="days"> Saturday</label>
+                        <label for="sun"><input type="radio" id="sun" name="days"> Sunday</label>
+                    </div><br><br>
+                    <p class="ads">Please read our Terms of Use and Ad Revenue Sharing Program Terms of Service again carefully <a href="#">HERE</a>.</p>
+                    <div class="check">
+                        <input type="checkbox" required> 
+                        <label>I have read and agree to the Terms of Use and Ad Revenue Sharing Program Terms of Service.</label>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="ele" style="background-color: #00ADB5;" onclick="goFront2()">Apply</button>
+                        <button class="ele" onclick="document.getElementById('daldal').style.display='none'">Cancel</button>
+                    </div>
+            </div>
+        </div>
+        <div id="ladlad" class="modal2x">
+            <div class="modal-content2x" id="modcon">
+                    <br><h4>Please read and agree to the terms below to apply for Coins.</h4><br>
+                    <ol class="reward">
+                        <li>Coins are currency in WEBCOMIC that can purchased episodes before accessing it.</li><br>
+                        <li>This series will be posted in ORIGINALS</li><br>
+                        <li>The 7 new episodes of this series will be locked behind 7 coins and can be purchased for 7 days.</li><br>
+                        <li>All of the revenue from purchased episodes by coins will be solely yours.</li><br>
+                        <li>Unable to update within 7 days and so on will cancel 1 coined episode and 1 Reward Ad until it doesn't have anymore.</li><br>
+                        <li>Update will be submitted for review and will be published at chosen Publish Schedule once approved.</li><br>
+                        <li>Update must be 3 days early of Publish Schedule as reviewing may take days to approved.</li><br>
+                        <li>2 or more updates in a week will scheduled other episode next week of Publish Schedule</li><br>
+                    </ol>
+                    <br><h4>Publish Schedule</h4><br>
+                    <div class="sched">
+                        <label for="mon"><input type="radio" id="mon" name="day" checked> Monday</label>
+                        <label for="tue"><input type="radio" id="tue" name="day"> Tuesday</label>
+                        <label for="wed"><input type="radio" id="wed" name="day"> Wednesday</label>
+                        <label for="thu"><input type="radio" id="thu" name="day"> Thursday</label>
+                        <label for="fri"><input type="radio" id="fri" name="day"> Friday</label>
+                        <label for="sat"><input type="radio" id="sat" name="day"> Saturday</label>
+                        <label for="sun"><input type="radio" id="sun" name="day"> Sunday</label>
+                    </div><br><br>
+                    <p class="ads">Please read our Terms of Use and Coin Revenue Sharing Program Terms of Service again carefully <a href="#">HERE</a>.</p>
+                    <div class="check">
+                        <input type="checkbox" required> 
+                        <label>I have read and agree to the Terms of Use and Coin Revenue Sharing Program Terms of Service.</label>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="ele" style="background-color: #00ADB5;" onclick="goFront3()">Apply</button>
+                        <button class="ele" onclick="document.getElementById('ladlad').style.display='none'">Cancel</button>
+                    </div>
+            </div>
+        </div>
+        <div id="id05" class="modal2x">
+            <div class="modal-content2x" id="tent">
+                <div class="bx" style="font-size: 15px;">
+                    <p>By marking this series Complete you will stop earning from Viewer Ads, Reward Ads and Coins.</p>
+                    <p>Final Ads are video ads that appear before the episodes of Complete Series can be accessed. 
+                        All of the episodes of this series will automatically earned Final Ads except for the first 3 episodes.</p>
+                    <button class="ele" style="background-color: #00ADB5;" onclick="goFront4()">Apply</button>
+                    <button onclick="document.getElementById('id05').style.display='none'" class="ele">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="../Images/logo.png" height="80px" class="logo"><br><br>
+        <div class="media">
+            <i class="fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div><br><br>
+        <div class="f_others">
+            <a href="../footer/feedback.html">Feedback</a>
+            <a href="../footer/help.html">Help</a>
+            <a href="../footer/terms.html">Terms</a>
+            <a href="../footer/privacy.html">Privacy</a>
+            <a href="../footer/contact.html">Contact</a>
+        </div><br><br>
+        <div class="credits"><i class="fa-regular fa-copyright"></i> 2024 WEBCOMIC Entertainment</div>
+    </footer>
+    <script>
+        var modal = document.getElementById("dal");
+        var btn = document.getElementById("btn");
+        var span = document.getElementsByClassName("exit")[0];
+
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+        var momo = document.getElementById("daldal");
+        var bubu = document.getElementById("btnbtn");
+        bubu.onclick = function() {momo.style.display = "block";}
+        window.onclick = function(event) {
+            if (event.target == momo) {
+                momo.style.display = "none";
+            }}
+
+        var omom = document.getElementById("ladlad");
+        var ubub = document.getElementById("ntbntb");
+        ubub.onclick = function() {omom.style.display = "block";}
+        window.onclick = function(event) {
+            if (event.target == omom) {
+                omom.style.display = "none";
+            }}
+
+        function goFront1(){
+        document.getElementById('id04').style.display = 'none';
+        document.getElementById('id01').style.display = 'block';
+        }
+        function goFront2(){
+        document.getElementById('daldal').style.display = 'none';
+        document.getElementById('id02').style.display = 'block';
+        }
+        function goFront3(){
+        document.getElementById('ladlad').style.display = 'none';
+        document.getElementById('id03').style.display = 'block';
+        }
+        function goFront4(){
+        document.getElementById('id05').style.display = 'none';
+        document.getElementById('id06').style.display = 'block';
+        }
+
+        function goBack1() {
+        document.getElementById('id01').style.display = 'none';
+        document.getElementById('id04').style.display = 'block';
+        }
+        function goBack2() {
+        document.getElementById('id02').style.display = 'none';
+        document.getElementById('daldal').style.display = 'block';
+        }
+        function goBack3() {
+        document.getElementById('id03').style.display = 'none';
+        document.getElementById('ladlad').style.display = 'block';
+        }
+        function goBack4() {
+        document.getElementById('id06').style.display = 'none';
+        document.getElementById('id05').style.display = 'block';
+        }
+    </script>
+
+<script src="../Darkmode.js"></script>
+</body>
+</html>

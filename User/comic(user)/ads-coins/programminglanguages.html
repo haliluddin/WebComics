@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../comic.css"> <link rel="stylesheet" href="../comic(media).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header> 
+        <nav> 
+            <img src="../../../Images/logo.png" class="logoh">
+            <ul class="nav">
+                <li><a href="../../index(user).html"> <h4>HOME</h4> <i class="fa-solid fa-house"></i>  </a></li>
+                <li><a href="../../originals/originals.html"> <h4>ORIGINALS</h4> <i class="fa-solid fa-pen-nib"></i> </a></li>
+                <li><a href="../../genres/action.html"> <h4>GENRES</h4> <i class="fa-solid fa-palette"></i> </a></li>
+                <li><a href="../../popular/popular.html"> <h4>POPULAR</h4> <i class="fa-solid fa-fire-flame-curved"></i></a></li>
+                <li><a href="../../canvas/canvas.html"> <h4>CANVAS</h4> <i class="fa-solid fa-brush"></i> </a></li>
+            </ul> 
+        </nav>
+           
+        <div class="user-library-inbox">
+            <img src="../../../Images/logo.png" class="tablet-logo">
+           
+            <div class="profile-search">
+                <a href="../../publish/publish.html"><button class="publish"> PUBLISH</button></a>
+                <a href="../../library/viewed.html"><i class="fa-solid fa-book-open-reader" ></i></a>
+                <button id="theme-toggle" class="mode"> <i class="fa-solid fa-moon" ></i></button>
+                <div class="drop-down">
+                    <button><img src="../../../Images/canvas/series3.jpg" class="user"></button>
+                    <div class="dropdown-content">
+                        
+                        <a href="../../others/account.html"> <i class="fa-solid fa-user"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account</a>
+                        <a href="#" id="myBtn"><i class="fa-solid fa-shop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coin Shop</a>
+                        
+                        <a href="../../../footer/help.html"><i class="fa-solid fa-question"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help </i></a>
+                        <a href="../../../index.html"><i class="fa-solid fa-right-from-bracket" style="color:#02767c; font-weight: bold;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#02767c; font-weight: bold;"> Log out</span></a>
+                      </div>
+                </div>
+                 
+                <form action="#" class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner" style="background-color: rgb(15, 23, 69) ;"><!--  Banner Start -->
+            <img src="../../../Images/series1.jpg" alt="" style="object-fit: contain;">
+            <div class="content">
+               <div class="info">
+                      <div class="title-author">
+                        <a href="../../genres/school.html" class="school"> School </a>
+                        <h1>Hooves of Death</h1>
+                        <h4> Sam Bragg </h4>
+                      </div>
+
+                      <div class="rate">
+                        <i class="fa-solid fa-eye" >  2.5B</i>
+                        <i class="fa-solid fa-user" > 6.5M</i>
+                        <i class="fa-solid fa-heart">  9.61</i>  
+                      </div>
+
+                      <p class="desc"> Programming Languages
+                      </p> 
+               </div>
+
+                <div class="buttons-socials">
+                    <a href="./programming/programminglanguges.html">  <button> First Episode <i class="fa-solid fa-chevron-right"></i></button> </a>
+                    <div class="socials">
+                        <div class="icons">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #f5f5f5;"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter" style="color: #f1f2f4;"></i></a>
+                            <a href="#"><i class="fa-solid fa-copy" style="color: #ffffff;"></i></a>
+                            <a href="#" onclick="document.getElementById('downModal').style.display = 'block'"><i class="fa-solid fa-circle-down"  style="color: #ffffff;"></i></a>
+                        </div>
+
+                        <button id="subscribe" class="subscribe"> Subscribe &#43;</button>
+                    </div>
+
+                    
+                </div>
+               </div>
+            </div><!-- Banner End -->
+            <br> 
+            <div class="chapters-cont">
+                
+             <div class="chapters">
+
+                <br>     
+            <div class="head">
+               <div class="announcement">
+                
+                <p class="status"> ongoing</p>
+               </div>
+                <div class="down-info">
+                    
+                    <p class="update"> Update every Thursday</p>
+                   
+                </div>
+            </div>
+
+
+                    <ul class="chapter"> 
+                       
+                        <a href="#chapters-cont" onclick="document.getElementById('CoinModal').style.display = 'block'"><li class="lock">
+                            <div class="episode"><img src="../../../Images/series1.jpg"/><h4> C++</h4></div>
+                            <div class="free-coins"><p> Free in 84 Day(s) </p> <h5> 7 Coins <i class="fa-solid fa-coins"></i> </h5></div>
+                     </li></a>
+
+                     <a href="#chapters-cont" onclick="document.getElementById('CoinModal').style.display = 'block'"><li class="lock">
+                            <div class="episode"><img src="../../../Images/series1.jpg"/><h4> Java</h4></div>
+                            <div class="free-coins"><p> Free in 84 Day(s) </p><h5> 7 Coins <i class="fa-solid fa-coins"></i> </h5></div>
+                     </li></a>
+
+                     <a href="#chapters-cont" onclick="document.getElementById('CoinModal').style.display = 'block'"><li class="lock">
+                             <div class="episode"><img src="../../../Images/series1.jpg"/> <h4> Python</h4></div>
+                              <div class="free-coins"><p> Free in 84 Day(s) </p><h5> 7 Coins <i class="fa-solid fa-coins"></i></h5></div>
+                     </li></a>
+
+                     <a href="#chapters-cont" onclick="document.getElementById('CoinModal').style.display = 'block'"><li class="lock">
+                            <div class="episode"> <img src="../../../Images/series1.jpg"/><h4> C#</h4></div>
+                            <div class="free-coins"><p> Free in 84 Day(s) </p><h5> 7 Coins <i class="fa-solid fa-coins"></i></h5></div>
+                     </li></a>
+
+                     <a href="#chapters-cont" onclick="document.getElementById('CoinModal').style.display = 'block'"><li class="lock">
+                            <div class="episode"><img src="../../../Images/series1.jpg"/><h4>Julia</h4></div>
+                            <div class="free-coins"><p> Free in 84 Day(s) </p><h5> 7 Coins <i class="fa-solid fa-coins"></i></h5></div>
+                     </li></a>
+
+                     <a href="../ads-coins/programming/ads.html"><li>
+                            <div class="episode"><img src="../../../Images/series1.jpg"/><i class="fa-solid fa-rectangle-ad" style="color: #02767c;"></i><h4> Ruby </h4></div>
+                            <div class="date-heart-rank"><p> March 16, 2024 </p><p> &#10084; 41,133 </p><p style="color: #00ADB5;">Watch an Ad</p></div>
+                     </li></a>
+
+                     <a href="../ads-coins/programming/ads.html"><li>
+                            <div class="episode"> <img src="../../../Images/series1.jpg"/><i class="fa-solid fa-rectangle-ad" style="color: #02767c;"></i> <h4> Fortran </h4></div>
+                            <div class="date-heart-rank"><p> March 16, 2024 </p><p> &#10084; 41,133 </p><p style="color: #00ADB5;">Watch an Ad</p></div>
+                     </li></a>
+
+                     <a href="./programming/programminglanguges.html"><li>
+                            <div class="episode"><img src="../../../Images/series1.jpg"/><h4> Perl </h4><h4 style="color: #00ADB5; font-weight: bold;"> UP </h4></div>
+
+                            <div class="date-heart-rank"><p> March 16, 2024 </p><p> &#10084; 41,133 </p><h5> 03</h5></div>
+                     </li></a>
+
+                     <a href="#./programming/programminglanguges.html"><li>
+                            <div class="episode"><img src="../../../Images/series1.jpg"/><h4> Pascal</h4></div>
+
+                            <div class="date-heart-rank"><p> March 16, 2024 </p><p> &#10084; 41,133 </p><h5> #02</h5></div>
+                     </li></a>
+
+                     <a href="#./programming/programminglanguges.html"><li>
+                            <div class="episode"><img src="../../../Images/series1.jpg"/><h4> Swift</h4></div>
+                            <div class="date-heart-rank"><p> March 16, 2024 </p><p> &#10084; 41,133 </p><h5> #01</h5></div>
+                     </li></a>
+
+                    </ul>
+              </div>
+
+             
+            </div>
+
+            <div class="recommended-cont">
+                <div class="recommended">
+                   <h3>You may also like</h3>
+                </div>
+             
+                <ul class="comics">
+                 <a href="#">
+                     <li>
+                         <img src="../../../Images/AngelintheForest(cover).jpg"/> 
+                         <div class="detail"> 
+                             <h4>The Angel in the Forest </h4>
+                             <p>Geunseo</p>
+                             <h5>&#10084; 41,133</h5> 
+                         </div>
+                     </li>
+                 </a>
+                 <a href="#">
+                     <li>
+                         <img src="../../../Images/Covenant(cover).jpg"/> 
+                         <div class="detail"> 
+                             <h4>Covenant</h4>
+                             <p>SOY MEDIA, Kanghee Jamae</p>
+                             <h5>&#10084; 41,133</h5> 
+                         </div>
+                     </li>
+                 </a>
+                 <a href="#">
+                     <li>
+                         <img src="../../../Images/CityofBlank(cover).png"/> 
+                         <div class="detail"> 
+                             <h4>City of Blank</h4>
+                             <p>Lee hyunmin, Kim Hyunsoo</p>
+                             <h5>&#10084; 41,133</h5> 
+                         </div>
+                     </li>
+                 </a>
+             </ul>
+             </div>
+
+
+
+<div id="id03" class="modal">
+    <div class="modal-content">
+        <div class="bx">
+            <p>Please Log in First</p>
+            <button type="button" class="ele"><a href="../login/login.html" Style="text-decoration: none; color: white;">Log in</a></button>
+            <button type="button" onclick="goBack()" class="ele">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<div id="id04" class="modal">
+    <div class="modal-content" action="profile.html">
+        <div class="bx">
+            <p>Report process has been completed.</p>
+            <button type="button" onclick="goBack()" class="ele">Okay</button>
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="coin-content">
+        <div class="dragon">
+            <div style="display: flex; gap: 30px;">
+                <span class="close">&times;</span>
+                <h2>Coin Shop</h2>
+            </div>
+            <div class="save">
+                <i class="fa-solid fa-coins"></i>
+                <p>13</p>
+            </div>
+        </div>
+        <h3>Unlock episodes and support creators!</h3>
+        <div class="coins">
+            <div>
+                <img src="../../others/6.png">
+                <h2>10</h2>
+                <p>US$ 0.99</p>
+            </div>
+            <div>
+                <img src="../../others/6.png">
+                <h2>50 <span>+ 2</span></h2>
+                <p>US$ 4.99</p>
+            </div>
+            <div>
+                <img src="../../others/3.png">
+                <h2>100 <span>+ 8</span></h2>
+                <p>US$ 9.99</p>
+            </div>
+            <div>
+                <img src="../../others/4.png">
+                <h2>300 <span>+ 30</span></h2>
+                <p>US$ 29.99</p>
+            </div>
+            <div>
+                <img src="../../others/2.png">
+                <h2>500 <span>+ 60</span></h2>
+                <p>US$ 49.99</p>
+            </div>
+            <div>
+                <img src="../../others/5.png">
+                <h2>1000 <span>+ 150</span></h2>
+                <p>US$ 99.99</p>
+            </div>
+        </div>
+        
+    </div>
+</div>  
+
+<div id="CoinModal" class="modal">
+    <div class="coin-content">
+        <div class="dragon">
+            <div style="display: flex; gap: 30px;"><span class="exit" onclick="document.getElementById('CoinModal').style.display = 'none'">&times;</span><h2>Coin Shop</h2></div>
+            <div class="save"><i class="fa-solid fa-coins"></i><p>13</p></div>
+        </div>
+        <h3>Unlock episodes and support creators!</h3>
+        <div class="coins">
+            <div><img src="../../others/6.png"><h2>10</h2><p>US$ 0.99</p></div>
+            <div><img src="../../others/6.png"><h2>50 <span>+ 2</span></h2><p>US$ 4.99</p></div>
+            <div><img src="../../others/3.png"><h2>100 <span>+ 8</span></h2><p>US$ 9.99</p></div>
+            <div><img src="../../others/4.png"><h2>300 <span>+ 30</span></h2><p>US$ 29.99</p></div>
+            <div><img src="../../others/2.png"><h2>500 <span>+ 60</span></h2><p>US$ 49.99</p></div>
+            <div><img src="../../others/5.png"><h2>1000 <span>+ 150</span></h2><p>US$ 99.99</p></div>
+        </div>
+    </div>
+</div> 
+
+<div id="downModal" class="download-modal">
+    <div class="download-content">
+         <div class="heading">
+            <h4> DOWNLOAD</h4>
+            <span class="exit" onclick="document.getElementById('downModal').style.display = 'none'"> <i class="fa-solid fa-circle-xmark"></i></span>
+         </div>
+       <h5> Select the Episodes you want to read offline</h5>
+         <div class="episodes">
+            <div class="episode">
+                <div class="img-ep-date"><img src="../../../Images/series1.jpg"><div class="number-date"><h4>C++</h4><h6> April 4, 2024</h6></div></div>
+                <input type="checkbox">
+            </div>
+            <div class="episode">
+                <div class="img-ep-date"><img src="../../../Images/series1.jpg"><div class="number-date"><h4>Java</h4><h6> April 1, 2024</h6></div></div>
+                <input type="checkbox">
+            </div>
+            <div class="episode">
+                <div class="img-ep-date"><img src="../../../Images/series1.jpg"><div class="number-date"><h4> Python</h4><h6> April 1, 2024</h6></div></div>
+                <input type="checkbox">
+            </div>
+         </div>
+         <div class="download">
+            <button> Download </button>
+            <p>All content can be downloaded only once <span style="color: #00ADB5;">(My Series > Downloads)</span>.
+                Downloaded content will expire after <span style="color: #00ADB5;">30 days</span> due to copyright restrictions.
+                 Please check your network connection in case of a download error.</p>
+         </div>
+    </div>
+</div>
+</main>
+
+<footer>
+<img src="../../../Images/logo.png" height="80px" class="logo"><br><br>
+<div class="media">
+    <i class="fa-brands fa-facebook "></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-tiktok"></i>
+</div><br><br>
+<div class="f_others">
+ 
+    <a href="../../../footer/feedback.html"> <div>Feedback</div></a>
+    <a href="../../../footer/help.html"> <div>Help</div></a>
+    <a href="../../../footer/terms.html"> <div>Terms</div></a>
+    <a href="../../../footer/privacy.html"><div>Privacy</div></a>
+    <a href="../../../footer/contact.html"> <div>Contact</div></a>
+</div><br><br>
+<div class="credits"><i class="fa-regular fa-copyright"></i> 2024 WEBCOMIC Entertainment</div>
+</footer>
+</main>
+
+<script src="../comic(user).js"></script>
+</body>
+</html>

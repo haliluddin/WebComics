@@ -1,0 +1,402 @@
+
+.payinfo{
+    margin: 30px 220px 150px 220px;
+    line-height: 1.4;
+}
+.payinfo a{
+    color: #00ADB5;
+    font-size: medium;
+    text-decoration: none;
+}
+.pay button{
+    border: none;
+    color: #00ADB5;
+    font-weight: bold;
+    background-color: #FAF9F6;
+    cursor: pointer;
+}
+.learn{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    color: #00ADB5;
+}
+.fa-arrow-right{
+    padding-top: 3px;
+}
+#nt{
+    width: 40%;
+    height: 100%;
+    overflow: auto;
+    padding: 0 20px;
+}
+#dal,#dada,#daldal,#ladlad,#slowly,#id{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.dont{
+    display: flex;
+    gap: 10px;
+}
+.dont h1{
+    color: #00ADB5;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.make{
+    margin-top: 15px;
+    width: 203px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FAF9F6;
+}
+#nt table{
+    margin: 20px 0;
+    padding: 20px 10px;
+    background-color: #FAF9F6;
+}
+#nt td{
+    width: 150px;
+    border-color: #FAF9F6;
+}
+.ap button{
+    all: unset;
+    cursor: pointer;
+}
+.reward{
+    height: 200px;
+    overflow: auto;
+    background-color: #EEEEEE;
+    padding: 20px 15px 10px 40px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.reward li{
+    font-size: 14px;
+}
+.a{
+    border-radius: 100px;
+    background-color: #00ADB5;
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-weight: bold;
+}
+#modcon{
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    overflow: auto;
+}
+.ads{
+  font-size: 14px;
+  line-height: 1.4;
+}
+.ads a{
+    color: #00ADB5;
+    text-decoration: none;
+    font-size: 14px;
+}
+.texta{
+    border: none;
+    font-size: medium;
+    resize: none;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.texta::placeholder{
+    font-size: medium;
+}
+.down{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 19px 10px;
+    border-top: rgb(207, 203, 203) 1px solid;
+}
+.z{
+    display: flex;
+    gap: 10px;
+    font-size: large;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px; 
+    height: 24px; 
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 12px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px; 
+    width: 18px; 
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%; 
+  }
+  
+  input:checked + .slider {
+    background-color: #00ADB5;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px); 
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  .slider.round {
+    border-radius: 24px; 
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  #sult{
+    width: auto;
+    height: 350px;
+    background-color: #fff;
+    text-align: center;
+    font-size: small;
+    display: flex;
+   overflow: auto;
+   border: rgb(207, 203, 203) 1px solid;
+   gap: 8px;
+   padding: 8px;
+   border-radius: 5px;
+  }
+  .nail{
+    width: 261px; 
+    height: 300px;
+  }
+
+  .dropbtn {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+  }
+ .dropbtn:hover{
+    background-color: #f2f2f2 ;
+ }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    z-index: 1;
+    box-shadow: none;
+    border-radius: 0;
+    border: rgb(207, 203, 203) 1px solid;
+  }
+
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: small;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .ment{
+    display: flex;
+    justify-content: space-between;
+  }
+.meh{
+    color: gray;
+    font-size: small;
+}
+.sched{
+  display: grid;
+  grid-template-areas: '1 2 3 4';
+  gap: 10px;
+}
+.check{
+  margin: 20px 0;
+  padding-top: 20px;
+  border-top: rgb(207, 203, 203) 1px solid;
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.masc{
+  font-size: small;
+  color: gray;
+  text-align: justify;
+}
+#c,#cr{
+  background-color: #00ADB5;
+  cursor: pointer;
+}
+.hd{
+  background-color: #fff;
+  font-size: medium;
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+}
+
+.hd:hover{
+  color: #00ADB5;
+}
+.love{
+  width: 680px;
+  text-align: center;
+  padding-top: 125px;
+  padding-bottom: 275px;
+}
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.pm button{
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0;
+}
+
+.light-mode #light{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+.dark-mode #dark{
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: none;
+  border:none;
+}
+.dark-mode #dark-icon i{
+  color: white;
+}
+.dark-mode #light button{
+  color: #000;
+  background-color: white;
+  border-radius: 50px;
+}
+.dark-mode #theme-toggle i{
+  color: white;
+}
+.dark-mode #shadow{
+  box-shadow: none;
+}
+
+.dark-mode #coins{
+  background-color: rgb(126, 126, 126);
+}
+
+.dark-mode .sub-nav{
+  background-color: #000;
+}
+.dark-mode #container{
+  background-color: #000;
+  border-bottom:1px solid gray;
+  border-top:1px solid gray;
+}
+.dark-mode .f_others a{
+  color: white;
+ }
+.dark-mode header{
+  background-color: #000;
+}
+.dark-mode .nav a{
+  background-color: #000;
+  color: white;
+}
+.dark-mode .profile-search i{
+  color: white;
+}
+.dark-mode .publish{
+  background-color: white;
+  color: #000;
+}
+
+.dark-mode .genre a{
+  color: white;
+}
+
+.dark-mode .menu select{
+  background-color: #000;
+  color: white;
+}
+.dark-mode footer{
+  background-color: #000;
+}
+.dark-mode .search-bar i{
+  color: #000;
+}
+.dark-mode .dropdown-content{
+  background-color: white;
+  color: white;
+}
+.dark-mode .dropdown-content i{
+  color: #000;
+}
+.dark-mode .modal-content .save{
+  background-color: #000;
+}
+.dark-mode .coins p{
+  background-color: #000;
+}
+.dark-mode .coins h2{
+  color: #000;
+}
+.dark-mode .user-library-inbox i{
+  color: white;
+}
+.dark-mode .serieslist a{
+  background-color: rgb(51, 48, 48);
+  color: white;
+}
+.dark-mode .serieslist a:hover{
+  background-color: #00ADB5;
+}
+.dark-mode .details h4{
+  color: white;
+}
+.dark-mode .details p{
+  color: rgb(187, 186, 186);
+}
+
+
+/* DARKMODE */

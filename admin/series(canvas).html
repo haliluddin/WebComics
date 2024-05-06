@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav>
+            <img src="../Images/logo2.0.png" height="70px" width="80px">
+            <ul>
+                
+                <a href="dashboard.html"><li><i class="fa-solid fa-bars icons"></i> Dashboard</li></a>
+                <a href="user.html"><li><i class="fa-solid fa-user icons"></i>Users</li></a>
+                <a href="series.html"><li class="ick" ><i class="fa-solid fa-layer-group icons"></i>Series</li></a>
+                <a href="episode(all).html"><li><i class="fa-solid fa-palette icons"></i>Episodes</li></a>
+                <a href="monetization.html"><li><i class="fa-solid fa-coins icons"></i>Monetization</li></a>
+                <a href="feedback.html"><li><i class="fa-solid fa-comments icons"></i>Feedback</li></a>
+           
+            </ul>
+        </nav>
+        <section>
+            <header>
+                <div class="cool">
+                    <i class="fa-solid fa-layer-group ict"></i>
+                    <h2>Series</h2>
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+                    </form>
+                </div>
+                <div class="sort">
+                    <p>Filter</p>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown('down')" style="width: 130px;">All <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content" id="down" style="width: 130px;">
+                            <a onclick="selectOption(this)" href="#">All</a>
+                            <a onclick="selectOption(this)" href="#">Action</a>
+                            <a onclick="selectOption(this)" href="#">Romance</a>
+                            <a onclick="selectOption(this)" href="#">Comedy</a>
+                            <a onclick="selectOption(this)" href="#">Fantasy</a>
+                            <a onclick="selectOption(this)" href="#">Drama</a>
+                            <a onclick="selectOption(this)" href="#">Sci-Fi</a>
+                            <a onclick="selectOption(this)" href="#">Horror</a>
+                            <a onclick="selectOption(this)" href="#">Thriller</a>
+                            <a onclick="selectOption(this)" href="#">School</a>
+                            <a onclick="selectOption(this)" href="#">Supernatural</a>
+                            <a onclick="selectOption(this)" href="#">Crime/Mystery</a>
+                            <a onclick="selectOption(this)" href="#">Historical</a>
+                            <a onclick="selectOption(this)" href="#">Sports</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sort">
+                    <p>Sort by</p>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown('drop')">Popular <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content" id="drop">
+                            <a onclick="selectOption(this)" href="#">Date</a>
+                            <a onclick="selectOption(this)" href="#">Popular</a>
+                            <a onclick="selectOption(this)" href="#">Likes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin">
+                    <img src="../Images/user.jpg">
+                    <div>
+                        <h4>Athena Casino</h4>
+                        <p>Admin</p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="justify">
+                    <div>
+                        <a href="series(canvas).html">CANVAS</a>
+                        <a href="series.html">ORIGINALS</a>
+                    </div>
+                    <button style="background-color: gray;" onclick="document.getElementById('id03').style.display='block'">+ Add Series</button>
+                </div>
+                <table>
+                    <tr>
+                        <th class="ep">Episodes</th>
+                        <th colspan="1" style="width: 270px;">Series Title</th>
+                        <th style="width: 115px;">Creator</th>
+                        <th style="width: 115px;">Genre</th>
+                        <th style="width: 170px;">Premium</th>
+                        <th style="width: 115px;">Schedule</th>
+                        <th style="width: 170px;">Last Update</th>
+                        <th style="width: 105px;">Status</th>
+                        <th colspan="3" style="text-align: center;">Action</th>
+                    </tr>
+                    <tr style="background-color: #F5F5F5;">
+                        <td class="ep">30</td>
+                        <td>The Guy Upstairs</td>
+                        <td>Hanza Art</td>
+                        <td>Thriller</td>
+                        <td>Viwer Ads, Reward Ads</td>
+                        <td>Tuesday</td>
+                        <td>Mar 05, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button onclick="window.location.href = '../comic/TheGuyUpstairs.html'"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt" onclick="document.getElementById('myModal').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="ep">30</td>
+                        <td>Gourmet Hound</td>
+                        <td>Leehama</td>
+                        <td>Drama</td>
+                        <td>Viewer Ads, Reward Ads</td>
+                        <td>Tuesday</td>
+                        <td>Mar 05, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button onclick="window.location.href = '../comic/GourmetHound.html'"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt"onclick="document.getElementById('mymyModal').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    <tr style="background-color: #F5F5F5;">
+                        <td class="ep">30</td>
+                        <td>Down To Earth</td>
+                        <td>Pookie Senpai</td>
+                        <td>Romance</td>
+                        <td>Viewer Ads, Reward Ads</td>
+                        <td>Tuesday</td>
+                        <td>Mar 05, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button onclick="window.location.href = '../comic/DownToEarth.html'"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt" onclick="document.getElementById('myModal').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="ep">30</td>
+                        <td>Castle Swimmer</td>
+                        <td>Wendy Lian Martin</td>
+                        <td>Fantasy</td>
+                        <td>Viewer Ads, Reward Ads</td>
+                        <td>Tuesday</td>
+                        <td>Mar 05, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button onclick="window.location.href = '../comic/CastleSwimmer.html'"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt" onclick="document.getElementById('mymyModal').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    <tr style="background-color: #F5F5F5;">
+                        <td class="ep">26</td>
+                        <td>Nerd and Jock</td>
+                        <td>Marko R</td>
+                        <td>Comedy</td>
+                        <td>Not Available</td>
+                        <td>Not Available</td>
+                        <td>Mar 07, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button onclick="window.location.href = '../comic/Nerd&Jock.html'"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt" onclick="document.getElementById('myModal').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="ep">26</td>
+                        <td>Bluechair</td>
+                        <td>Shen</td>
+                        <td>Comedy</td>
+                        <td>Not Available</td>
+                        <td>Not Available</td>
+                        <td>Mar 07, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button onclick="window.location.href = '../comic/bluechair.html'"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt" onclick="document.getElementById('mymyModal').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    <tr style="background-color: #F5F5F5;">
+                        <td class="ep">26</td>
+                        <td>Hooves of Death</td>
+                        <td>Sam Bragg</td>
+                        <td>Fantasy</td>
+                        <td>Not Available</td>
+                        <td>Not Available</td>
+                        <td>Mar 07, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button onclick="window.location.href = '../comic/HoovesofDeath.html'"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt" onclick="document.getElementById('myModal').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="ep">26</td>
+                        <td>DON'T HATE</td>
+                        <td>Pink_Alien</td>
+                        <td>Comedy</td>
+                        <td>Not Available</td>
+                        <td>Not Available</td>
+                        <td>Mar 05, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button onclick="window.location.href = '../comic/DontHate.html'"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt" onclick="document.getElementById('mymyModal').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    <tr style="background-color: #F5F5F5;">
+                        <td class="ep">1</td>
+                        <td>Hello, World!</td>
+                        <td>username</td>
+                        <td>School</td>
+                        <td>Not Available</td>
+                        <td>Not Available</td>
+                        <td>Mar 08, 2024 15:54</td>
+                        <td>Ongoing</td>
+                        <td class="butt"><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+                        <td class="butt" onclick="document.getElementById('id02').style.display='block'"><button><i class="fa-solid fa-chart-simple"></i></button></td>
+                        <td class="butt"><button onclick="document.getElementById('id02').style.display='block'"><i class="fa-solid fa-trash"></i></button></td>
+                    </tr>
+                    
+                    
+                </table>
+                <div class="number">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div id="mymyModal" class="modal">
+                    <div class="modal-content" style="padding: 30px;">
+                        <span class="exit" onclick="document.getElementById('mymyModal').style.display='none'">&times;</span>
+                        <div class="dove">
+                            <div class="div">
+                                <i class="fa-solid fa-heart"></i>
+                                <div>
+                                    <p>Likes</p>
+                                    <h1>65,654</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-eye"></i>
+                                <div>
+                                    <p>Views</p>
+                                    <h1>3.5M</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-coins"></i>
+                                <div>
+                                    <p>Revenue</p>
+                                    <h1>1M</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    <p>Subscriber</p>
+                                    <h1>123,999</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-share"></i>
+                                <div>
+                                    <p>Shares</p>
+                                    <h1>789</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-flag"></i>
+                                <div>
+                                    <p>Reports</p>
+                                    <h1>0</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content" style="padding: 30px;">
+                        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                        <div class="dove">
+                            <div class="div">
+                                <i class="fa-solid fa-heart"></i>
+                                <div>
+                                    <p>Likes</p>
+                                    <h1>53,999</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-eye"></i>
+                                <div>
+                                    <p>Views</p>
+                                    <h1>2.9M</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-coins"></i>
+                                <div>
+                                    <p>Revenue</p>
+                                    <h1>800,098</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    <p>Subscriber</p>
+                                    <h1>98,123</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-share"></i>
+                                <div>
+                                    <p>Shares</p>
+                                    <h1>666</h1>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <i class="fa-solid fa-flag"></i>
+                                <div>
+                                    <p>Reports</p>
+                                    <h1>3</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="id01" class="modal" style="padding-top: 200px;">
+                    <div class="modal-content" style="width: 30%;">
+                        <div class="bx">
+                            <p>Approve this episode?</p>
+                            <p class="meh">Approving this episode means it has met the Community Policy.</p>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="ele">Yes</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="ele">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="id02" class="modal" style="padding-top: 200px;">
+                    <form class="modal-content" action="episode(canvas).html" style="width: 30%;">
+                        <div class="bx">
+                            <p>You are about to permanently delete this episode.<br>Are you sure?</p>
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="ele">Cancel</button>
+                            <button type="submit" onclick="document.getElementById('id02').style.display='none'" class="ele">Delete</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="id09" class="modal" style="padding-top: 150px;">
+                    <div class="modal-content" style="width: 30%;">
+                        <div class="bx">
+                            <h2>Why was this episode denied?</h2><br>
+                            <button class="hd" onclick="goFront0()">Copyright Infringement</button><br>
+                            <button class="hd" onclick="goFront0()">Abusive or Hateful Content</button><br>
+                            <button class="hd" onclick="goFront0()">Mature or Sexual Content</button><br>
+                            <button class="hd" onclick="goFront0()">Violent or Graphic Content</button><br>
+                            <button class="hd" onclick="goFront0()">Dangerous or Illegal Content</button><br><br>
+                            <button type="button" onclick="document.getElementById('id09').style.display='none'" class="ele">Cancel</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="id03" class="modal">
+                    <div class="modal-content" style="padding: 30px;">
+                        <span class="close" onclick="document.getElementById('id03').style.display='none'">&times;</span>
+                        <form action="#" class="search-bar" id="search">
+                            <input type="text" placeholder="Search Series">
+                            <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+                        </form>
+                        <h3 class="separate">Recent</h3>
+                        <ul class="rank">
+                            <a href="#">
+                                <li>
+                                    <img src="../Images/THeGuyUpstairs(cover).jpg"/>
+                                    <div class="details"> 
+                                        Thriller
+                                        <h4>The Guy Upstairs</h4>
+                                        Hanza Art
+                                    </div>
+                                </li>
+                                <div class="add"  onclick="document.getElementById('id03').style.display='none'">+</div>
+                            </a>
+                                <a href="#">
+                                    <li>
+                                        <img src="../Images/GourmentHound(cover).jpg"/>
+                                        <div class="details"> 
+                                            Drama
+                                            <h4>Gourmet Hound</h4>
+                                            Leehama
+                                        </div>
+                                    </li>
+                                    <div class="add"  onclick="document.getElementById('id03').style.display='none'">+</div>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        <img src="../Images/DowntoEarth(cover).jpg"/>
+                                        <div class="details"> 
+                                             Romance
+                                            <h4>Down To Earth</h4>
+                                            Pookie Senpai
+                                        </div>
+                                    </li>
+                                    <div class="add"  onclick="document.getElementById('id03').style.display='none'">+</div>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        <img src="../Images/Jock and nerd.webp"/>
+                                        <div class="details"> 
+                                            Comedy
+                                            <h4>Nerd and Jock</h4>
+                                            Marko R
+                                        </div>
+                                    </li>
+                                    <div class="add"  onclick="document.getElementById('id03').style.display='none'">+</div>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        <img src="../Images/series3.jpg"/>
+                                        <div class="details"> 
+                                            School 
+                                            <h4>Hello, World!</h4>
+                                            username
+                                        </div>
+                                    </li>
+                                    <div class="add" onclick="document.getElementById('id03').style.display='none'">+</div>
+                                </a>
+                            </ul><br>
+                            <a href="#" class="clear">Clear Recent Searches</a>
+                    </div>
+                </div>    
+                
+            </main>   
+
+        </section>
+        <script>
+            function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            if (dropdown.style.display === 'none') {
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+            }
+            function selectOption(option) {
+            var dropdownContent = option.parentElement;
+            var button = dropdownContent.previousElementSibling;
+            var selectedOptionText = option.textContent;
+            button.innerHTML = selectedOptionText + ' <i class="fa-solid fa-caret-down"></i>';
+            toggleDropdown(dropdownContent.id);
+            }
+
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("mymy");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            var momodal = document.getElementById("mymyModal");
+            var btbtn = document.getElementById("my");
+            var span = document.getElementsByClassName("exit")[0];
+            btbtn.onclick = function() {
+            momodal.style.display = "block";
+            }
+            span.onclick = function() {
+            momodal.style.display = "none";
+            }
+        </script>
+</body>
+</html>

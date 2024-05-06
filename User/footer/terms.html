@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="../originals/style.css">
+    <link rel="stylesheet" href="../canvas/media.css">
+    <link rel="stylesheet" href="../others/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header> 
+        <img src="../Images/logo.png" class="logoh">
+        <nav> 
+            <ul class="nav">
+                <li ><a href="../index(user).html" > HOME </a></li>
+                <li><a href="../originals/originals.html"> ORIGINALS </a></li>
+                <li><a href="../genres/action.html"> GENRES </a></li>
+                <li><a href="../popular/popular.html" > POPULAR</a></li>
+                <li><a href="../canvas/canvas.html"> CANVAS </a></li>
+            </ul> 
+        </nav>
+           
+        <div class="user-library-inbox">
+            <a href="../publish/dashboard.html"><button class="publish"> PUBLISH</button></a>
+            <a href="../library/viewed.html"><i class="fa-solid fa-book-open-reader" ></i></a>
+            
+
+            <div class="drop-down">
+                <button><img src="../Images/canvas/series3.jpg" class="user"></button>
+                <div class="dropdown-content">
+                    
+                    <a href="../others/account.html"> <i class="fa-solid fa-user"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account</a>
+                    <a href="#" id="naila"><i class="fa-solid fa-shop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coin Shop</a>
+                    <a href="../footer/help.html"><i class="fa-solid fa-question"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help </i></a>
+                    <a href="../../index.html"><i class="fa-solid fa-right-from-bracket" style="color:#02767c; font-weight: bold;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#02767c; font-weight: bold;"> Log out</span></a>
+                  </div>
+            </div>
+            
+           </div>
+
+           <form action="#" class="search-bar">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+        </form>
+    </header>
+    <div id="athena" class="modal">
+        <div class="modal-content">
+            <div class="dragon">
+                <div style="display: flex; gap: 30px;">
+                    <span class="close">&times;</span>
+                    <h2>Coin Shop</h2>
+                </div>
+                <div class="save">
+                    <i class="fa-solid fa-coins"></i>
+                    <p>13</p>
+                </div>
+            </div>
+            <h3>Unlock episodes and support creators!</h3>
+            <div class="coins">
+                <div>
+                    <img src="6.png">
+                    <h2>10</h2>
+                    <p>US$ 0.99</p>
+                </div>
+                <div>
+                    <img src="6.png">
+                    <h2>50 <span>+ 2</span></h2>
+                    <p>US$ 4.99</p>
+                </div>
+                <div>
+                    <img src="3.png">
+                    <h2>100 <span>+ 8</span></h2>
+                    <p>US$ 9.99</p>
+                </div>
+                <div>
+                    <img src="4.png">
+                    <h2>300 <span>+ 30</span></h2>
+                    <p>US$ 29.99</p>
+                </div>
+                <div>
+                    <img src="2.png">
+                    <h2>500 <span>+ 60</span></h2>
+                    <p>US$ 49.99</p>
+                </div>
+                <div>
+                    <img src="5.png">
+                    <h2>1000 <span>+ 150</span></h2>
+                    <p>US$ 99.99</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("athena");
+        var btn = document.getElementById("naila");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+    <header class="header-tablet"> 
+
+        <div class="logo-search">
+            <img src="../Images/logo.png" class="logoh">
+            <div class="login-publish-search">
+                <div class="echos">
+                    <a href="../library/viewed.html"><i class="fa-solid fa-book-open-reader library"></i></a>
+                    <div class="drop-down">
+                        <button><img src="../Images/canvas/series3.jpg" class="user"></button>
+                        <div class="dropdown-content">
+                            <a href="../others/account.html"> <i class="fa-solid fa-user"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account</a>
+                            <a href="#" id="ayana"><i class="fa-solid fa-shop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coin Shop</a>
+                            <a href="../footer/help.html"><i class="fa-solid fa-question"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help </i></a>
+                            <a href="../../index.html"><i class="fa-solid fa-right-from-bracket" style="color:#02767c; font-weight: bold;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#02767c; font-weight: bold;"> Log out</span></a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="search-bar">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+            </form>
+            
+        </div>
+        <nav>  
+            <ul class="nav-tablet">
+                <li><a href="../index.html"> <i class="fa-solid fa-house"></i> </a></li>
+                <li><a href="../originals/originals.html"> <i class="fa-solid fa-pen-nib"></i> </a></li>
+                <li><a href="../genres/action.html"> <i class="fa-solid fa-palette"></i></a></li>
+                <li><a href="../popular/popular.html"> <i class="fa-solid fa-fire-flame-curved"></i></a></li>
+                <li><a href="../canvas/canvas.html"> <i class="fa-solid fa-brush"></i> </a></li>
+            </ul>
+        </nav>
+</header>
+<div id="april" class="modal">
+    <div class="modal-content">
+        <div class="dragon">
+            <div style="display: flex; gap: 30px;">
+                <span class="exit">&times;</span>
+                <h2>Coin Shop</h2>
+            </div>
+            <div class="save">
+                <i class="fa-solid fa-coins"></i>
+                <p>13</p>
+            </div>
+        </div>
+        <h3>Unlock episodes and support creators!</h3>
+        <div class="coins">
+            <div>
+                <img src="../others/6.png">
+                <h2>10</h2>
+                <p>US$ 0.99</p>
+            </div>
+            <div>
+                <img src="../others/6.png">
+                <h2>50 <span>+ 2</span></h2>
+                <p>US$ 4.99</p>
+            </div>
+            <div>
+                <img src="../others/3.png">
+                <h2>100 <span>+ 8</span></h2>
+                <p>US$ 9.99</p>
+            </div>
+            <div>
+                <img src="../others/4.png">
+                <h2>300 <span>+ 30</span></h2>
+                <p>US$ 29.99</p>
+            </div>
+            <div>
+                <img src="../others/2.png">
+                <h2>500 <span>+ 60</span></h2>
+                <p>US$ 49.99</p>
+            </div>
+            <div>
+                <img src="../others/5.png">
+                <h2>1000 <span>+ 150</span></h2>
+                <p>US$ 99.99</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById("april");
+    var btn = document.getElementById("ayana");
+    var span = document.getElementsByClassName("exit")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    <main>
+        <nav>
+            <ul class="sub-nav">
+                <li class="click"><a href="terms.html"> TERMS OF USE </a></li>
+                <li class="genre"><a href="privacy.html"> PRIVACY POLICY </a></li>
+                <li class="genre"><a href="community.html"> COMMUNITY POLICY </a></li>
+            </ul>
+            <ul class="gen-nav" style="justify-content: center;">
+                <li class="click"><a href="terms.html"> TERMS OF USE </a></li>
+                <li class="genre"><a href="privacy.html"> PRIVACY POLICY </a></li>
+                <li class="genre"><a href="community.html"> COMMUNITY POLICY </a></li>
+            </ul>
+        </nav>
+        <div class="termsofuse">
+            <h2>1. Acceptance of the Terms of Use</h2><br>
+            <p>By using WEBCOMIC's services, you agree to the Terms of Use, Community Policy, Uploading Guidelines, and Ad Revenue Sharing Program Terms.
+                 If you don't agree, you can't use the services. If you're using the services for someone else, you confirm you have the authority to agree on their behalf. 
+                 You also agree to follow any additional guidelines or rules posted by WEBCOMIC.</p>
+            <br><br>
+            <h2>2. Changes to the Terms of Use</h2><br>
+            <p>WEBCOMIC can update the Agreement, and they'll notify you of significant changes via email, within the platform, or by updating the date on the Agreement. 
+                It's your responsibility to check the latest version on their website or app. Any changes are effective immediately upon posting, and if you continue using the services, 
+                it means you accept the updates. If you don't agree, you should stop using the services.</p>
+            <br><br>
+            <h2>3. Ownership and License of Digital Content and User Postings</h2><br>
+            <p> a) <span>Ownership of Digital Content</span>. WEBCOMIC owns the services and digital content. The content is protected by intellectual property laws, and you don't gain any ownership rights.<br>
+                <br>b) <span>License of Digital Content to You</span>. When you use digital content from WEBCOMIC, you get a limited, non-commercial license to access and use it personally, but you can't own or transfer it.<br>
+                <br>c) <span>Limitations to Digital Content License</span>. You can't copy, sell, modify, or bypass protections on the digital content. You're allowed to use it only as specified within the terms, and you can't use it unlawfully or infringe on any rights.</p>
+            <br><br>
+            <h2>4. WEBCOMIC Website and WEBCOMIC App.</h2><br>
+            <p>a) <span>Use of WEBCOMIC Website and WEBCOMIC App</span>. You can use the services and software only on the devices specified, without separating or transferring components, or selling or distributing the software.<br>
+                <br>b) <span>Account Creation</span>. You might need to create an account for access. You're responsible for keeping your account secure and should notify WEBCOMIC of any unauthorized use.<br>
+                <br>c) <span>Updates</span>. WEBCOMIC may provide updates for the website and app; not downloading updates could affect security and access to features.<br>
+                <br>d) <span>No Reverse Engineering, Decompilation, Disassembly, or Circumvention</span>. You can't modify, reverse engineer, or create derivative works from the services or digital content, or bypass their protections.</p>
+            <br><br>
+            <h2>5. Conditions of Use</h2><br>
+            <p>a) <span>Acceptable Use</span>. You must not use the Services in a way that harms WEBCOMIC or others, interferes with the Services' operation, or violates laws. This includes not impersonating others, allowing unauthorized access to your account, using unauthorized automated means, overloading the network, interfering with the Services' functioning, attempting unauthorized access or reverse engineering, distributing unauthorized materials, or engaging in conduct that restricts others' use of the Services.<br>
+                <br>b) <span>Compliance with Law and Reservation of Rights</span>. You must use the Services in compliance with laws and not in a way that harms WEBCOMIC, its users, or third parties.<br>
+                <br>c) <span>Content Moderation</span>. WEBCOMIC may use tools and personnel to monitor and moderate content for violations of the Agreement, policies, guidelines, and laws. Details about content policies and penalties are in the Community Policy and Uploading Guidelines.</p>
+            <br><br>
+            <h2>6. Privacy</h2><br>
+            <p>a) WEBCOMIC has a Privacy Policy that outlines how they collect and use your personal information. You should read it to understand how your information is handled.<br>
+                <br>b) If you use third-party services like Facebook, Google, or Twitter to login or share information through WEBCOMIC, those services may collect information about you according to their own privacy policies.<br>
+                <br>d) Be cautious about sharing personal information in public areas of WEBCOMIC, as other users can see and use that information. WEBCOMIC isn't responsible for information shared publicly.<br>
+                <br>e) WEBCOMIC may communicate with you about the Services and related matters through email or other methods you provide during registration. This includes seeking feedback, notifying you of changes, and informing you about future programs, products, or services.</p>
+            <br><br>
+            <h2>7. User Postings: Feedback</h2><br>
+            <p>a) <span>License of User Postings to WEBCOMIC</span>. When users post content on WEBCOMIC, they grant the platform a broad license to use, modify, distribute, and promote their content worldwide. This license is perpetual, meaning it lasts indefinitely, and encompasses various rights such as creating derivative works and monetizing the content through advertising or fees.<br>
+                <br>b) <span>Feedback</span>. Users can provide feedback on the services, but this feedback does not grant them any rights or ownership over the services or their suggestions. WEBCOMIC retains full ownership and can use the feedback as it sees fit without compensating the user.<br>
+                <br>c) <span>Promotion and Marketing</span>. WEBCOMIC has the right to use user content, including derivative works, to promote and market the platform globally in various languages and media formats, both current and future.</p>
+            <br><br>
+            <h2>8. Advertisements and Third-Party Services</h2><br>
+            <p>a) WEBCOMIC can show its own ads or ads from third parties on its website or app, online or offline, as per the Agreement. These ads may include promotional messages in various formats like text, graphics, audio, or video, and may lead to external links.<br>
+                <br>b) The Services may include links to third-party services or content and integrations with third-party platforms such as social media sites. WEBCOMIC doesn't control or endorse these third-party services and is not responsible for any issues or damages that may arise from using them. Users should refer to the terms and policies of these services for any concerns.</p>
+            <br><br>
+            <h2>9. Purchasing and Redeeming Coins</h2><br>
+            <p>a) Coins are provided through various means determined by WEBCOMIC, such as purchases or special offers, for accessing specific content on the platform. The payment methods, units, and conditions regarding Coins are set by WEBCOMIC and displayed on the Services.<br>
+                <br>b) Coins are solely for accessing content within the Services and cannot be exchanged or used for other purposes. WEBCOMIC reserves the right to change the purchase price and the number of Coins required for content access, with the terms in effect at the time of access.<br>
+                <br>c) The maximum purchase value of Coins associated with an account cannot exceed $2,000 (or local currency equivalent) at any time.<br>
+                <br>d) Across all accounts, Coin purchases must not exceed $10,000 (or local currency equivalent) per day, subject to the limit in point.<br>
+                <br>e) WEBCOMIC may refuse Coin purchases if suspicious activity, fraud, or unauthorized transactions are suspected.<br>
+                <br>f) WEBCOMIC reserves the right to modify or limit the maximum Coin balance and purchase value at any time.<br>
+                <br>g) Coins are tied to the purchasing account and cannot be transferred between different operating systems or content languages.<br>
+                <br>h) Coin sales are final and not refundable, except where required by law or at WEBCOMIC's discretion.<br>
+                <br>i) WEBCOMIC may offer promotional Free Coins that expire after a specified period and are used before purchased Coins.<br>
+                <br>j) Transferring Coins outside of the Services, selling, trading, or exchanging them for real money is prohibited.<br>
+                <br>k) WEBCOMIC may discontinue Coins from the Services with prior notice, and unused Coins will expire on the discontinuance date.<br>
+                <br>l) For iOS users, Coins purchased without logging into an account are device-specific and cannot be transferred or restored after app deletion.</p>
+            <br><br>
+            <h2>10. Fees</h2><br>
+            <p>You might have to pay fees to WEBCOMIC for purchasing Coins or using specific Services features (Service Fees). You're responsible for paying these fees as listed on the platform. If fees are recurring, WEBCOMIC can charge them to your specified Payment Method. By using this method, you authorize WEBCOMIC to charge Service Fees, additional service fees, and applicable taxes. Fees may change,
+                 and new features may have additional fees, with advance notice from WEBCOMIC. Third-party payment processors may handle these fees on WEBCOMIC's behalf, and WEBCOMIC isn't liable for errors caused by them.</p>
+            <br><br>
+            <h2>11. Termination and Suspension</h2><br>
+            <p>You have the right to stop using the Services anytime. WEBCOMIC can modify, suspend, or terminate access to the Services or Digital Content for any reason, with or without notice. They may also interrupt service for maintenance or changes. If you violate the Agreement, your rights automatically terminate, requiring you to stop using the Service. WEBCOMIC can revoke your access if necessary and may suspend access if terms are not followed. WEBCOMIC's failure to enforce terms doesn't waive their rights or remedies.</p>
+            <br><br>
+            <h2>12. Disclaimer of Warranties</h2><br>
+            <p>our use of the Services and Digital Content is at your own risk. WEBCOMIC and its licensors provide the Services and Digital Content "as is" without any warranty, express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy, security, or non-infringement. WEBCOMIC disclaims responsibility for interruptions, errors, viruses, or damage to devices or data. They do not guarantee the accuracy or completeness of content and are not liable for errors or losses resulting from the use of content. WEBCOMIC is not responsible for third-party products or services 
+                advertised through the Services. Users should exercise caution and judgment. No advice or information from WEBCOMIC creates a warranty not explicitly stated. Some jurisdictions may not allow certain warranty limitations, in which case specific provisions may apply.</p>
+            <br><br>
+            <h2>13. Limitation of Liability</h2><br>
+            <p>WEBCOMIC and its affiliates are not liable for indirect, incidental, or consequential damages, breach of warranty or contract, negligence, or any legal theory related to the Services. This includes loss of profits, data, or use of the Services, and any errors or inaccuracies in content. WEBCOMIC is also not liable for third-party content or conduct. Their aggregate liability under the Agreement is limited to the amount paid in Service Fees. Some jurisdictions may not allow certain liability exclusions or limitations, in which case specific provisions may apply. The remaining parts of the Agreement remain valid and enforceable to the fullest extent permitted by law.</p>
+            <br><br>
+            <h2>14. Indemnification</h2><br>
+            <p>You agree to indemnify, defend, and hold harmless WEBCOMIC, its affiliates, and their respective officers, directors, agents, partners, and employees from any losses, liabilities, claims, expenses, and legal fees arising from your use of the Services, Digital Content, or User Postings. This includes claims related to violations of the Agreement, applicable laws, or third-party rights (such as copyrights) due to your User Postings.</p>
+            <br><br>
+            <h2>15. Governing Law: Disputes</h2><br>
+            <p>a) If accessing the Services is illegal in your country or for you personally, you're responsible for complying with local laws.<br>
+                <br>b) The Agreement is governed by the laws of California, excluding any conflict of law provisions.<br>
+                <br>c) Any legal disputes not resolved by arbitration under Section 17 will be brought exclusively in federal or state courts in Los Angeles, California. You waive objections to jurisdiction and venue in these courts.</p>
+            <br><br>
+            <h2>16. Arbitration and Class Action Waiver</h2><br>
+            <p>a) <span>Notice of Dispute</span>. If there's a dispute, you or WEBCOMIC must provide a written statement with contact information, facts of the dispute, and a proposed solution. Try to resolve it informally for 60 days, then arbitration can start if needed.<br>
+                <br>b) <span>Mediation, Binding Arbitration and Governing Law</span>. Try mediation first; if that fails, resolve disputes through binding arbitration. No class actions allowed. Arbitration location is Los Angeles, California.<br>
+                <br>c) <span>Class Action Waiver</span>. Disputes must be handled individually, not as class actions. <br>
+                <br>d) <span>Mass Arbitrations</span>. If 25+ similar disputes arise, they're resolved in stages through arbitration.<br>
+                <br>e) <span>Arbitration Procedures</span>. Follow JAMS rules for arbitration. Telephonic hearings are common for disputes under $10,000 unless an in-person hearing is justified.<br>
+                <br>f) <span>Arbitration Fees</span>. Whoever files arbitration pays initial fees. Each party bears its own legal expenses unless the arbitrator decides otherwise.<br>
+                <br>g) <span>Filing Period</span>. Disputes must be filed within one year in arbitration, starting from when the claim first arises.<br>
+                <br>h) <span> Opt-Out</span>. You can opt out of arbitration within 30 days of agreeing to the terms or receiving notice of changes to the arbitration provision.
+            <br><br><br>
+            <h2>17. Complete Agreement and Severability</h2><br>
+            <p>This paragraph essentially states that the Agreement is the complete agreement between you and WEBCOMIC regarding the Services and Digital Content, replacing any previous understandings. If any part of the Agreement is found to be invalid or unenforceable, that specific part will be disregarded, but the rest of the Agreement will remain valid and enforceable.</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <img src="../Images/logo.png" height="80px" class="logo"><br><br>
+        <div class="media">
+            <i class="fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div><br><br>
+        <div class="f_others">
+            <a href="../footer/feedback.html">Feedback</a>
+            <a href="../footer/help.html">Help</a>
+            <a href="../footer/terms.html">Terms</a>
+            <a href="../footer/privacy.html">Privacy</a>
+            <a href="../footer/contact.html">Contact</a>
+        </div><br><br>
+        <div class="credits"><i class="fa-regular fa-copyright"></i> 2024 WEBCOMIC Entertainment</div>
+    </footer>
+</body>
+</html>
